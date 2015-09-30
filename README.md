@@ -19,7 +19,7 @@
 
 |章节|名称|进程|
 |----|----|----|
-|第一章|微信开发服务器环境搭建|![](http://progressed.io/bar/0)|
+|第一章|微信开发服务器环境搭建|![](http://progressed.io/bar/0?title=*)|
 |第二章|申请成为微信开发者|![](http://progressed.io/bar/0)|
 |第三章|处理微信服务器的消息|![](http://progressed.io/bar/0)|
 |第四章|自定义菜单开发|![](http://progressed.io/bar/0)|
