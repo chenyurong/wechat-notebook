@@ -19,20 +19,22 @@
 
 |章节|名称|进程|
 |----|----|----|
-|第一章|微信开发服务器环境搭建|![](http://progressed.io/bar/0?title=*)|
-|第二章|申请成为微信开发者|![](http://progressed.io/bar/0)|
-|第三章|处理微信服务器的消息|![](http://progressed.io/bar/0)|
-|第四章|自定义菜单开发|![](http://progressed.io/bar/0)|
-|第五章|高级接口使用——语音识别接口|![](http://progressed.io/bar/0)|
-|第六章|高级接口使用——客服接口|![](http://progressed.io/bar/0)|
-|第七章|高级接口使用——OAuth2.0网页授权|![](http://progressed.io/bar/0)|
-|第八章|高级接口使用——生成带参数二维码|![](http://progressed.io/bar/0)|
-|第九章|高级接口使用——获取用户地理位置|![](http://progressed.io/bar/0)|
-|第十章|高级接口使用——获取用户基本信息|![](http://progressed.io/bar/0)|
-|第11章|高级接口使用——获取关注者列表|![](http://progressed.io/bar/0)|
-|第12章|高级接口使用——用户分组接口|![](http://progressed.io/bar/0)|
-|第13章|高级接口使用——上传及下载多媒体文件|![](http://progressed.io/bar/0)|
-
+|第一章|[微信开发服务器环境搭建](01_wechat_server_config.md)|![](http://progressed.io/bar/100)|
+|第二章|[申请成为微信开发者](02_become_wechat_developer.md)|![](http://progressed.io/bar/100)|
+|第三章|[处理微信服务器的消息 - 定义消息类对象](03_handle_message_1_pojo.md)|![](http://progressed.io/bar/100)|
+|第四章|[处理微信服务器的消息 - 解析/封装XML消息](04_handle_message_2_parse_unparse_xml.md)|![](http://progressed.io/bar/100)|
+|第五章|[处理微信服务器的消息 - 各种消息的接收与响应](05_handle_message_3_receive_send_msg.md)|![](http://progressed.io/bar/100)|
+|第六章|[自定义菜单开发 - 获取access_token](06_self_menu_1_keep_token_valid.md)|![](http://progressed.io/bar/100)|
+|第七章|[自定义菜单开发 - 设置自定义菜单](07_self_menu_2_set_menu.md)|![](http://progressed.io/bar/100)|
+|第八章|高级接口使用——语音识别接口|![](http://progressed.io/bar/0)|
+|第九章|高级接口使用——客服接口|![](http://progressed.io/bar/0)|
+|第十章|高级接口使用——OAuth2.0网页授权|![](http://progressed.io/bar/0)|
+|第11章|高级接口使用——生成带参数二维码|![](http://progressed.io/bar/0)|
+|第12章|高级接口使用——获取用户地理位置|![](http://progressed.io/bar/0)|
+|第13章|高级接口使用——获取用户基本信息|![](http://progressed.io/bar/0)|
+|第14章|高级接口使用——获取关注者列表|![](http://progressed.io/bar/0)|
+|第15章|高级接口使用——用户分组接口|![](http://progressed.io/bar/0)|
+|第16章|高级接口使用——上传及下载多媒体文件|![](http://progressed.io/bar/0)|
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />This work by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.github.com/ChanShuYi" property="cc:attributionName" rel="cc:attributionURL">ChanShuYi</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 <!-- Place this tag right after the last button or just before your close body tag. -->
