@@ -1,0 +1,60 @@
+# 高级接口使用——语音识别接口
+
+开通语音识别功能，用户每次发送语音给公众号时，微信会在推送的语音消息XML数据包中，增加一个Recongnition字段。
+
+因此我们只需要再之前的语音消息类VoiceMessage里增加一个Recognition字段就可以了，修改后的VoiceMessage类代码如下：
+
+```java
+package com.chanshuyi.pojo.message.req;
+
+/**
+ * 请求类，语音消息
+ *
+ * @author chenyr
+ * @date 2015.10.03
+ */
+public class VoiceMessage extends BaseMessage {
+    // 媒体ID
+    private String MediaId;
+    // 语音格式
+    private String Format;
+    // 语音识别结果
+    private String Recognition;
+
+    public String getMediaId() {
+        return MediaId;
+    }
+
+    public void setMediaId(String mediaId) {
+        MediaId = mediaId;
+    }
+
+    public String getFormat() {
+        return Format;
+    }
+
+    public void setFormat(String format) {
+        Format = format;
+    }
+
+
+    public String getRecognition() {
+        return Recognition;
+    }
+
+    public void setRecognition(String recognition) {
+        Recognition = recognition;
+    }
+}
+```
+
+之后我们修改CoreService.processRequest()方法，当用户发送语音消息是，我们将语音识别的结果回复给用户。
+
+```java
+// 音频消息
+else if (msgType.equals(MessageTypeDef.REQ_MESSAGE_TYPE_VOICE)) {
+    respContent = "您发送的是音频消息！你说的是：" + requestMap.get("Recognition");
+}	
+```
+
+语音识别的高级接口就是这么简单。

@@ -26,7 +26,7 @@
 |第五章|[处理微信服务器的消息 - 各种消息的接收与响应](05_handle_message_3_receive_send_msg.md)|![](http://progressed.io/bar/100)|
 |第六章|[自定义菜单开发 - 获取access_token](06_self_menu_1_keep_token_valid.md)|![](http://progressed.io/bar/100)|
 |第七章|[自定义菜单开发 - 设置自定义菜单](07_self_menu_2_set_menu.md)|![](http://progressed.io/bar/100)|
-|第八章|高级接口使用——语音识别接口|![](http://progressed.io/bar/0)|
+|第八章|[高级接口使用——语音识别接口](08_advanced1_voice_recognition.md)|![](http://progressed.io/bar/100)|
 |第九章|高级接口使用——客服接口|![](http://progressed.io/bar/0)|
 |第十章|高级接口使用——OAuth2.0网页授权|![](http://progressed.io/bar/0)|
 |第11章|高级接口使用——生成带参数二维码|![](http://progressed.io/bar/0)|
