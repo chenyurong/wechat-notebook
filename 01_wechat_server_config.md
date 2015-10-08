@@ -22,10 +22,11 @@
 scp /Users/yurongchan/TEMP/jdk-7u2-linux-i586.rpm root@130.21.122.223:/chenyr/deploy/tomcat6044/webapps
 ```
 
-用rpm命令安装JDK：
+改变文件权限，并用rpm命令安装JDK：
 
 ```
-rpm -ivh  jdk-7u2-linux-i586.rpm 
+chmod +x jdk-7u67-linux-x64.rpm
+rpm -ivh jdk-7u67-linux-x64.rpm
 ```
 
 JDK默认安装在`/usr/java`目录下
