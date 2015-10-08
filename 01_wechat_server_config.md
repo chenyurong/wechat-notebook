@@ -16,7 +16,7 @@
 
 我选择的是纯净版的CENTOS6.5系统，没有预装任何软件。
 
-去Oracle网站下载[jdk7.0的rpm包](http://www.oracle.com/technetwork/java/javase/downloads/jdk-7u2-download-1377129.html)，下载之后用scp命令上传到服务器上
+去[Oracle网站](http://www.oracle.com/technetwork/java/javase/archive-139210.html)下载，下载之后用scp命令上传到服务器上
 
 ```
 scp /Users/yurongchan/TEMP/jdk-7u2-linux-i586.rpm root@130.21.122.223:/chenyr/deploy/tomcat6044/webapps
