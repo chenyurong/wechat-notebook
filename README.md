@@ -30,7 +30,7 @@
 |第九章|[高级接口使用——客服接口](09_advanced2_kefu.md)|![](http://progressed.io/bar/0)|
 |第十章|高级接口使用——OAuth2.0网页授权|![](http://progressed.io/bar/0)|
 |第11章|[高级接口使用——生成带参数二维码](11_advanced4_qrcode.md)|![](http://progressed.io/bar/0)|
-|第12章|高级接口使用——获取用户地理位置|![](http://progressed.io/bar/0)|
+|第12章|[高级接口使用——获取用户地理位置](12_advanced5_location.md)|![](http://progressed.io/bar/0)|
 |第13章|高级接口使用——获取用户基本信息|![](http://progressed.io/bar/0)|
 |第14章|高级接口使用——获取关注者列表|![](http://progressed.io/bar/0)|
 |第15章|高级接口使用——用户分组接口|![](http://progressed.io/bar/0)|
