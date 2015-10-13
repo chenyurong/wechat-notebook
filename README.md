@@ -33,7 +33,7 @@
 |第12章|[高级接口使用——获取用户地理位置](12_advanced5_location.md)|![](http://progressed.io/bar/100)|
 |第13章|[高级接口使用——获取用户基本信息](13_advanced6_userinfo.md)|![](http://progressed.io/bar/100)|
 |第14章|[高级接口使用——获取关注者列表](14_advanced7_userlist.md)|![](http://progressed.io/bar/100)|
-|第15章|高级接口使用——用户分组接口|![](http://progressed.io/bar/0)|
+|第15章|[高级接口使用——用户分组接口](15_advanced8_usergroup.md)|![](http://progressed.io/bar/100)|
 |第16章|高级接口使用——上传及下载多媒体文件|![](http://progressed.io/bar/0)|
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />This work by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.github.com/ChanShuYi" property="cc:attributionName" rel="cc:attributionURL">ChanShuYi</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
