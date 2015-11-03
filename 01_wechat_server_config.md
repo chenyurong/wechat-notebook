@@ -62,4 +62,6 @@ export JAVA_HOME JRE_HOME PATH CLASSPATH
 
 `http://serverip:port`
 
+到这里我们已经部署好了一个可以部署Java Web应用的服务器，下篇我们将介绍如何创建一个能接收微信服务器消息的应用，并用这个应用开通开发者模式。
+
 

@@ -1,164 +1,48 @@
-# 自定义菜单开发 - 设置自定义菜单
+# 自定义菜单开发 - 创建自定义菜单
 
-微信允许公众号通过开发接口进行自定义菜单的开发，这样我们就可以让自定义菜单有更加丰富的功能。
+上篇文章中，我们定义了自定义菜单类对象。在这篇文章，我们将介绍如何创建自定义菜单。
 
-我们通过开发接口开发自定义菜单的时候，只需要向`菜单创建接口`发送一次请求即可，而不需要每次启动项目都启动。但这里为了方便，我直接将创建菜单放在上一篇说到的InitServlet里。
+创建自定义菜单，我们需要请求『自定义菜单创建接口』：
 
-自定义菜单中的菜单类型可以分为3种不同的类型：
-
-- 没有二级菜单的一级菜单、二级菜单（CommonButton）
-- 有二级菜单的一级菜单（ComplexButton）
-- 点击跳转到页面的菜单（ViewButton）
-
-按照上面的分析，我们创建出我们需要的POJO类对象
-
-## 菜单类对象
-
-基本按钮对象Button类，所有其他按钮类都将继承此类。
-
-```java
-package com.chanshuyi.pojo.menu;
-
-/**
- * 按钮的基类
- *
- * @author chenyr
- * @date 2015-09-29
- */
-public class Button {
-    private String name;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-}
+```
+ https://api.weixin.qq.com/cgi-bin/menu/create?access_token=ACCESS_TOKEN
 ```
 
-普通按钮类CommonButton
+并附带上JSON参数，例如：
 
-```java
-package com.chanshuyi.pojo.menu;
-
-/**
- * 普通按钮（子按钮）
- * 没有子菜单的菜单项，有可能是二级菜单项，也有可能是不含二级菜单的一级菜单。
- *
- * @author chenyr
- * @date 2015-09-29
- */
-public class CommonButton extends Button {
-
-    private String type;
-
-    private String key;
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public String getKey() {
-        return key;
-    }
-
-    public void setKey(String key) {
-        this.key = key;
-    }
-}
+```
+{
+     "button":[
+     {	
+          "type":"click",
+          "name":"今日歌曲",
+          "key":"V1001_TODAY_MUSIC"
+      },
+      {
+           "name":"菜单",
+           "sub_button":[
+           {	
+               "type":"view",
+               "name":"搜索",
+               "url":"http://www.soso.com/"
+            },
+            {
+               "type":"view",
+               "name":"视频",
+               "url":"http://v.qq.com/"
+            },
+            {
+               "type":"click",
+               "name":"赞一下我们",
+               "key":"V1001_GOOD"
+            }]
+       }]
+ }
 ```
 
-复杂按钮类ComplexButton
-
-```java
-package com.chanshuyi.pojo.menu;
-
-/**
- * 复杂按钮（父按钮）
- * 包含有二级菜单项的一级菜单
- *
- * @author chenyr
- * @date 2015-09-29
- */
-public class ComplexButton extends Button {
-    private Button[] sub_button;
-
-    public Button[] getSub_button() {
-        return sub_button;
-    }
-
-    public void setSub_button(Button[] sub_button) {
-        this.sub_button = sub_button;
-    }
-}
-```
-
-ViewButton类
-
-```java
-package com.chanshuyi.pojo.menu;
-
-/**
- * view类型的菜单
- *
- * @author chenyr
- * @date 2015.09.30
- */
-public class ViewButton extends Button {
-    private String type;
-    private String url;
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
-}
-```
-
-最后，我们根据微信对于一级和二级菜单的要求创建一个Menu类，代表整个菜单。
-
-```java
-package com.chanshuyi.pojo.menu;
-
-/**
- * 菜单
- *
- * @author chenyr
- * @date 2015-09-29
- */
-public class Menu {
-    private Button[] button;
-
-    public Button[] getButton() {
-        return button;
-    }
-
-    public void setButton(Button[] button) {
-        this.button = button;
-    }
-}
-```
+下面创建一个MenuManger类，这个类将完成向微信服务器请求创建自定义菜单的所有工作。
 
 ## MenuManger 类
-
-下面创建一个MenuManger类，这个类将完成向微信服务器请求创建自定义菜单额所有工作。
 
 ```java
 package com.chanshuyi.wechat.main;
@@ -352,8 +236,3 @@ public class MenuManager {
         }
     }
 ```
-
-
-
-
-
