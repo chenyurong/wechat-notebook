@@ -1,8 +1,12 @@
 # 获取access_token并保证长期有效
 
+access_token是请求一些接口所必须的一个令牌，只有有了这个access_token我们才能成功调用这个接口。根据微信官方文档的解释，access_token的有效期只有两个小时，因此我们必须每两个小时就更新access_token。因此如何动态更新access_token就成了一个问题。
+
 我们实现access_token长期有效的基本思路：Web服务器启动时就加载一个Servlet，在Servlet的init()方法中启动一个线程，在线程的run()方法中通过死循环+Thread.sleep()的方式定期获取access_token，然后将获取到的access_token保存在public static修饰的变量中。
 
 在项目中的其他类，可以通过调用 TokenThread.accessToken.getToken() 来得到接口访问凭证access_token。
+
+下面我们看看我们如何通过Java来实现动态更新access_token。
 
 ## 创建Initservlet类
 
@@ -73,7 +77,7 @@ public class InitServlet extends HttpServlet {
 </servlet-mapping>
 ```
 
-将WECHAT_APPID、WECHAT_APPSECRET替换为你自己的。
+将WECHAT_APPID、WECHAT_APPSECRET替换为你自己的。在这个类中我们创建了一个在启动项目的时候就运动的Servlet，并另外启动了一个定时更新Token值的线程：TokenThread类。
 
 其中TokenThread是一个定时发送请求以更新token的线程类，代码如下：
 
@@ -167,4 +171,4 @@ public class TokenThread implements Runnable {
     }
 ```
 
-END.
+到这里自定义创建菜单的介绍就到此结束了。下面我们将介绍微信的九大高级接口，如果你的公众号是服务号并且通过了微信认证的话，就可以调用这些接口。

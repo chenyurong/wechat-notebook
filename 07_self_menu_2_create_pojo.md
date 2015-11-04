@@ -1,14 +1,14 @@
 # 自定义菜单开发 - 创建自定义菜单
 
-上篇文章中，我们定义了自定义菜单类对象。在这篇文章，我们将介绍如何创建自定义菜单。
+上个章节中，我们定义了自定义菜单的POJO对象。在这节中，我们将介绍如何创建自定义菜单。
 
-创建自定义菜单，我们需要请求『自定义菜单创建接口』：
+通过微信官方文档我们知道，创建自定义菜单，我们需要请求『自定义菜单创建接口』：
 
 ```
  https://api.weixin.qq.com/cgi-bin/menu/create?access_token=ACCESS_TOKEN
 ```
 
-并附带上JSON参数，例如：
+并附带上JSON参数响应的JSON字符串参数就可以了。例如：
 
 ```
 {
@@ -177,6 +177,8 @@ public class MenuManager {
 }
 ```
 
+`WeixinUtil.getAccessToken`表示获取token对象，token对象指的是请求这个接口的令牌。我们将在下个章节中详细介绍。
+
 `int result = WeixinUtil.createMenu(getMenu(), at.getToken());` 表示向微信服务器发送HTTPS请求创建自定义菜单，代码如下：
 
 ```java
@@ -236,3 +238,11 @@ public class MenuManager {
         }
     }
 ```
+
+其中上面有
+
+```
+WeixinUtil.getAccessToken(TokenThread.appid, TokenThread.appsecret)
+```
+
+等关于token的操作，我们将在下一节中详细介绍。
