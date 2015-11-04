@@ -1,5 +1,9 @@
 # 高级接口使用——语音识别接口
 
+上面的章节中我们介绍了自定义菜单的开发，下面的章节中，我们将介绍微信的九大高级接口。
+
+这一节，我们介绍微信的语音识别接口。
+
 开通语音识别功能，用户每次发送语音给公众号时，微信会在推送的语音消息XML数据包中，增加一个Recongnition字段。因此我们只需要在之前的语音消息类VoiceMessage里增加一个Recognition字段就可以了，修改后的VoiceMessage类代码如下：
 
 ```java
@@ -56,3 +60,5 @@ else if (msgType.equals(MessageTypeDef.REQ_MESSAGE_TYPE_VOICE)) {
 ```
 
 语音识别的高级接口就是这么简单。
+
+下一节我们将介绍客服接口。

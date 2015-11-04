@@ -36,6 +36,23 @@
 |第15章|[高级接口使用——用户分组接口](15_advanced8_usergroup.md)|![](http://progressed.io/bar/100)|
 |第16章|[高级接口使用——上传及下载多媒体文件](16_advanced9_updownload.md)|![](http://progressed.io/bar/100)|
 
+```
+第一章：如何进行微信公众号
+- 微信公众号的分类
+- 微信公众号的申请
+- 微信公众号的开发
+- 搭建开发服务器环境
+- 校验通过开发者模式
+
+第二章：处理微信服务器消息
+
+
+第三章：自定义菜单开发
+
+
+第四章：高级接口使用
+```
+
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />This work by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.github.com/ChanShuYi" property="cc:attributionName" rel="cc:attributionURL">ChanShuYi</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 <!-- Place this tag right after the last button or just before your close body tag. -->
 <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
