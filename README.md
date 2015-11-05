@@ -19,39 +19,28 @@
 
 |章节|名称|进程|
 |----|----|----|
-|第一章|[微信开发服务器环境搭建](01_wechat_server_config.md)|![](http://progressed.io/bar/100)|
-|第二章|[申请成为微信开发者](02_become_wechat_developer.md)|![](http://progressed.io/bar/100)|
-|第三章|[处理微信服务器的消息 - 定义消息类对象](03_handle_message_1_pojo.md)|![](http://progressed.io/bar/100)|
-|第四章|[处理微信服务器的消息 - 解析/封装XML消息](04_handle_message_2_parse_unparse_xml.md)|![](http://progressed.io/bar/100)|
-|第五章|[处理微信服务器的消息 - 各种消息的接收与响应](05_handle_message_3_receive_send_msg.md)|![](http://progressed.io/bar/100)|
-|第六章|[自定义菜单开发 - 获取access_token](06_self_menu_1_keep_token_valid.md)|![](http://progressed.io/bar/100)|
-|第七章|[自定义菜单开发 - 设置自定义菜单](07_self_menu_2_set_menu.md)|![](http://progressed.io/bar/100)|
-|第八章|[高级接口使用——语音识别接口](08_advanced1_voice_recognition.md)|![](http://progressed.io/bar/100)|
-|第九章|[高级接口使用——客服接口](09_advanced2_kefu.md)|![](http://progressed.io/bar/100)|
-|第十章|高级接口使用——OAuth2.0网页授权|![](http://progressed.io/bar/50)|
-|第11章|[高级接口使用——生成带参数二维码](11_advanced4_qrcode.md)|![](http://progressed.io/bar/100)|
-|第12章|[高级接口使用——获取用户地理位置](12_advanced5_location.md)|![](http://progressed.io/bar/100)|
-|第13章|[高级接口使用——获取用户基本信息](13_advanced6_userinfo.md)|![](http://progressed.io/bar/100)|
-|第14章|[高级接口使用——获取关注者列表](14_advanced7_userlist.md)|![](http://progressed.io/bar/100)|
-|第15章|[高级接口使用——用户分组接口](15_advanced8_usergroup.md)|![](http://progressed.io/bar/100)|
-|第16章|[高级接口使用——上传及下载多媒体文件](16_advanced9_updownload.md)|![](http://progressed.io/bar/100)|
-
-```
-第一章：如何进行微信公众号
-- 微信公众号的分类
-- 微信公众号的申请
-- 微信公众号的开发
-- 搭建开发服务器环境
-- 校验通过开发者模式
-
-第二章：处理微信服务器消息
-
-
-第三章：自定义菜单开发
-
-
-第四章：高级接口使用
-```
+|第一章|[如何进行微信公众号开发](00_00_wechat.md)|![](http://progressed.io/bar/100)|
+||[微信公众号介绍](00_01_wechat_intro.md)|![](http://progressed.io/bar/100)|
+||[搭建开发服务器环境](00_02_wechat_server_config.md)|![](http://progressed.io/bar/100)|
+||[校验通过开发者模式](00_03_become_wechat_developer.md)|![](http://progressed.io/bar/100)|
+|第二章|[处理微信服务器消息](01_00_handle_message.md)|![](http://progressed.io/bar/100)|
+||[处理微信服务器消息](01_01_handle_message_1_receive_send_msg.md)|![](http://progressed.io/bar/100)|
+||[定义POJO对象](01_02_handle_message_2_pojo.md)|![](http://progressed.io/bar/100)|
+||[解析/封装XML文档](01_03_handle_message_3_parse_unparse_xml.md)|![](http://progressed.io/bar/100)|
+|第三章|[自定义菜单开发](02_00_menu.md)|![](http://progressed.io/bar/100)|
+||[定义POJO对象](02_01_menu_1_menu_pojo.md)|![](http://progressed.io/bar/100)|
+||[创建自定义菜单](02_02_menu_2_create_menu.md)|![](http://progressed.io/bar/100)|
+||[保持token长期有效](02_03_menu_3_keep_token_valid.md)|![](http://progressed.io/bar/100)|
+|第四章|[高级接口使用](03_00_advanced.md)|![](http://progressed.io/bar/100)|  
+||[语音识别接口](03_01_advanced1_voice_recognition.md)|![](http://progressed.io/bar/100)|
+||[客服接口](03_02_advanced2_kefu.md)|![](http://progressed.io/bar/100)|
+||[OAuth2.0网页授权](03_03_advanced3_web_OAuth.md)|![](http://progressed.io/bar/0)|
+||[生成带参数二维码](03_04_advanced4_qrcode.md)|![](http://progressed.io/bar/100)|
+||[获取用户地理位置](03_05_advanced5_location.md)|![](http://progressed.io/bar/100)|
+||[获取用户基本信息](03_06_advanced6_userinfo.md)|![](http://progressed.io/bar/100)|
+||[获取关注者列表](03_07_advanced7_userlist.md)|![](http://progressed.io/bar/100)|
+||[用户分组接口](03_08_advanced8_usergroup.md)|![](http://progressed.io/bar/100)|
+||[上传及下载多媒体文件](03_09_advanced9_updownload.md)|![](http://progressed.io/bar/100)|
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />This work by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.github.com/ChanShuYi" property="cc:attributionName" rel="cc:attributionURL">ChanShuYi</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 <!-- Place this tag right after the last button or just before your close body tag. -->
