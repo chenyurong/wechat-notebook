@@ -1,0 +1,6 @@
+{
+  "gitbook": ">=2.0.0",
+  "title":"wechat Notebook",
+  "language":"zh-cn",
+  "description":"微信公众号开发全记录"
+}

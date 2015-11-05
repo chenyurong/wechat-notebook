@@ -19,10 +19,10 @@
 
 |章节|名称|进程|
 |:----:|----|----|
-|第一章|[如何进行微信公众号开发](00_00_wechat.md)|![](http://progressed.io/bar/100)|
-|第二章|[处理微信服务器消息](01_00_handle_message.md)|![](http://progressed.io/bar/100)|
-|第三章|[自定义菜单开发](02_00_menu.md)|![](http://progressed.io/bar/100)|
-|第四章|[高级接口使用](03_00_advanced.md)|![](http://progressed.io/bar/100)|  
+|第一章|如何进行微信公众号开发|![](http://progressed.io/bar/100)|
+|第二章|处理微信服务器消息|![](http://progressed.io/bar/100)|
+|第三章|自定义菜单开发|![](http://progressed.io/bar/100)|
+|第四章|高级接口使用|![](http://progressed.io/bar/100)|  
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />This work by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.github.com/ChanShuYi" property="cc:attributionName" rel="cc:attributionURL">ChanShuYi</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 <!-- Place this tag right after the last button or just before your close body tag. -->

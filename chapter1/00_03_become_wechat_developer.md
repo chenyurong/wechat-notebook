@@ -4,7 +4,7 @@
 
 当你申请成为开发者的时候，微信官方会要求你填入以下信息`URL（服务器地址）、Token（令牌）、EncodingAESKey（消息加解密秘钥）`这3个信息，如下图所示：
 
-![](img/02/wechat_server_config.jpg)
+![](../img/02/wechat_server_config.jpg)
 
 这其实要求你的你的服务器上按其要求创建一个Web应用，以供其验证，用来确定这个服务器确实是归你所有。
 
@@ -282,13 +282,13 @@ public class SignUtil {
 
 到这里，所有编码都完成了，就是这么简单。接下来就是将工程发布到公网服务器上。发布到服务器上后，我们在浏览器里访问CoreServlet，如果看到如下界面就表示我们的代码没有问题：
 
-![](img/02/404.png)
+![](../img/02/404.png)
 
 啊，代码都报空指针异常了还说证明没问题？那当然了，因为直接在地址栏访问coreServlet，就相当于提交的是GET请求，而我们什么参数都没有传，在验证的时候当然会报空指针异常。
 
 接下来，把coreServlet的访问路径拷贝下来，再回到微信公众平台的接入配置信息界面，将coreServlet的访问路径粘贴到URL中，并将SignUtil类中指定的token值weixinCourse填入到Token中，填写后的结果如下图所示：
 
-![](img/02/wechat_server_config_after.jpg)
+![](../img/02/wechat_server_config_after.jpg)
 
 之后点击提交，如果提示Token验证成功就是提交成功了。
 
