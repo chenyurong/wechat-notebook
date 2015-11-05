@@ -1,0 +1,786 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>创建自定义菜单 | wechat Notebook</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.1.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../chapter3/02_03_menu_3_keep_token_valid.html" />
+    
+    
+    <link rel="prev" href="../chapter3/02_01_menu_1_menu_pojo.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="3.2" data-basepath=".." data-revision="Thu Nov 05 2015 21:41:53 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="输入并搜索" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        微信公众号开发概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter1/00_00_wechat.html">
+            
+                
+                    <a href="../chapter1/00_00_wechat.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        微信公众号开发介绍
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="chapter1/00_01_wechat_intro.html">
+            
+                
+                    <a href="../chapter1/00_01_wechat_intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        微信公众号介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1/00_02_wechat_server_config.html">
+            
+                
+                    <a href="../chapter1/00_02_wechat_server_config.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        搭建开发服务器环境
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter1/00_03_become_wechat_developer.html">
+            
+                
+                    <a href="../chapter1/00_03_become_wechat_developer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        校验通过开发者模式
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="chapter2/01_00_handle_message.html">
+            
+                
+                    <a href="../chapter2/01_00_handle_message.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        处理微信服务器消息
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="chapter2/01_01_handle_message_1_receive_send_msg.html">
+            
+                
+                    <a href="../chapter2/01_01_handle_message_1_receive_send_msg.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        简单的例子
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter2/01_02_handle_message_2_pojo.html">
+            
+                
+                    <a href="../chapter2/01_02_handle_message_2_pojo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        定义消息类对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chapter2/01_03_handle_message_3_parse_unparse_xml.html">
+            
+                
+                    <a href="../chapter2/01_03_handle_message_3_parse_unparse_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        解析/封装XML消息
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="chapter3/02_00_menu.html">
+            
+                
+                    <a href="../chapter3/02_00_menu.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        自定义菜单开发
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="chapter3/02_01_menu_1_menu_pojo.html">
+            
+                
+                    <a href="../chapter3/02_01_menu_1_menu_pojo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        定义菜单类POJO对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.2" data-path="chapter3/02_02_menu_2_create_menu.html">
+            
+                
+                    <a href="../chapter3/02_02_menu_2_create_menu.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        创建自定义菜单
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="chapter3/02_03_menu_3_keep_token_valid.html">
+            
+                
+                    <a href="../chapter3/02_03_menu_3_keep_token_valid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        获取access_token并保证长期有效
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="chapter4/03_00_advanced.html">
+            
+                
+                    <a href="../chapter4/03_00_advanced.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        九大高级接口使用
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="chapter4/03_01_advanced1_voice_recognition.html">
+            
+                
+                    <a href="../chapter4/03_01_advanced1_voice_recognition.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        语音接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="chapter4/03_02_advanced2_kefu.html">
+            
+                
+                    <a href="../chapter4/03_02_advanced2_kefu.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        客服接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="chapter4/03_03_advanced3_web_OAuth.html">
+            
+                
+                    <a href="../chapter4/03_03_advanced3_web_OAuth.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        网页授权接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="chapter4/03_04_advanced4_qrcode.html">
+            
+                
+                    <a href="../chapter4/03_04_advanced4_qrcode.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        二维码接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="chapter4/03_05_advanced5_location.html">
+            
+                
+                    <a href="../chapter4/03_05_advanced5_location.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        地理位置接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="chapter4/03_06_advanced6_userinfo.html">
+            
+                
+                    <a href="../chapter4/03_06_advanced6_userinfo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        用户基本信息接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="chapter4/03_07_advanced7_userlist.html">
+            
+                
+                    <a href="../chapter4/03_07_advanced7_userlist.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        用户列表接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="chapter4/03_08_advanced8_usergroup.html">
+            
+                
+                    <a href="../chapter4/03_08_advanced8_usergroup.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        用户分组接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="chapter4/03_09_advanced9_updownload.html">
+            
+                
+                    <a href="../chapter4/03_09_advanced9_updownload.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        上传下载接口
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                本书使用 GitBook 发布
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="目录"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="搜索"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="字体设置"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">衬线体</button>
+        <button type="button" data-font="1" class="button">无衬线体</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">白色</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">棕褐色</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">夜间</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="分享"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    分享到 Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    分享到 Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    分享到 Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    分享到 Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    分享到 Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >wechat Notebook</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="%E8%87%AA%E5%AE%9A%E4%B9%89%E8%8F%9C%E5%8D%95%E5%BC%80%E5%8F%91-%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E8%8F%9C%E5%8D%95">&#x81EA;&#x5B9A;&#x4E49;&#x83DC;&#x5355;&#x5F00;&#x53D1; - &#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x83DC;&#x5355;</h1>
+<p>&#x4E0A;&#x4E2A;&#x7AE0;&#x8282;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x4E86;&#x81EA;&#x5B9A;&#x4E49;&#x83DC;&#x5355;&#x7684;POJO&#x5BF9;&#x8C61;&#x3002;&#x5728;&#x8FD9;&#x8282;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x83DC;&#x5355;&#x3002;</p>
+<p>&#x901A;&#x8FC7;&#x5FAE;&#x4FE1;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x6211;&#x4EEC;&#x77E5;&#x9053;&#xFF0C;&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x83DC;&#x5355;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x8BF7;&#x6C42;&#x300E;&#x81EA;&#x5B9A;&#x4E49;&#x83DC;&#x5355;&#x521B;&#x5EFA;&#x63A5;&#x53E3;&#x300F;&#xFF1A;</p>
+<pre><code> https://api.weixin.qq.com/cgi-bin/menu/create?access_token=ACCESS_TOKEN
+</code></pre><p>&#x5E76;&#x9644;&#x5E26;&#x4E0A;JSON&#x53C2;&#x6570;&#x54CD;&#x5E94;&#x7684;JSON&#x5B57;&#x7B26;&#x4E32;&#x53C2;&#x6570;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>{
+     &quot;button&quot;:[
+     {    
+          &quot;type&quot;:&quot;click&quot;,
+          &quot;name&quot;:&quot;&#x4ECA;&#x65E5;&#x6B4C;&#x66F2;&quot;,
+          &quot;key&quot;:&quot;V1001_TODAY_MUSIC&quot;
+      },
+      {
+           &quot;name&quot;:&quot;&#x83DC;&#x5355;&quot;,
+           &quot;sub_button&quot;:[
+           {    
+               &quot;type&quot;:&quot;view&quot;,
+               &quot;name&quot;:&quot;&#x641C;&#x7D22;&quot;,
+               &quot;url&quot;:&quot;http://www.soso.com/&quot;
+            },
+            {
+               &quot;type&quot;:&quot;view&quot;,
+               &quot;name&quot;:&quot;&#x89C6;&#x9891;&quot;,
+               &quot;url&quot;:&quot;http://v.qq.com/&quot;
+            },
+            {
+               &quot;type&quot;:&quot;click&quot;,
+               &quot;name&quot;:&quot;&#x8D5E;&#x4E00;&#x4E0B;&#x6211;&#x4EEC;&quot;,
+               &quot;key&quot;:&quot;V1001_GOOD&quot;
+            }]
+       }]
+ }
+</code></pre><p>&#x4E0B;&#x9762;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;MenuManger&#x7C7B;&#xFF0C;&#x8FD9;&#x4E2A;&#x7C7B;&#x5C06;&#x5B8C;&#x6210;&#x5411;&#x5FAE;&#x4FE1;&#x670D;&#x52A1;&#x5668;&#x8BF7;&#x6C42;&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x83DC;&#x5355;&#x7684;&#x6240;&#x6709;&#x5DE5;&#x4F5C;&#x3002;</p>
+<h2 id="menumanger-%E7%B1%BB">MenuManger &#x7C7B;</h2>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.wechat.main;
+
+<span class="hljs-keyword">import</span> com.chanshuyi.pojo.AccessToken;
+<span class="hljs-keyword">import</span> com.chanshuyi.pojo.menu.*;
+<span class="hljs-keyword">import</span> com.chanshuyi.util.WeixinUtil;
+<span class="hljs-keyword">import</span> com.chanshuyi.wechat.thread.TokenThread;
+<span class="hljs-keyword">import</span> org.slf4j.Logger;
+<span class="hljs-keyword">import</span> org.slf4j.LoggerFactory;
+
+<span class="hljs-javadoc">/**
+ * &#x83DC;&#x5355;&#x7BA1;&#x7406;&#x5668;&#x7C7B;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015.10.04
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MenuManager</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger log = LoggerFactory.getLogger(MenuManager.class);
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">createMenu</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-comment">// &#x8C03;&#x7528;&#x63A5;&#x53E3;&#x83B7;&#x53D6;access_token</span>
+        AccessToken at = WeixinUtil.getAccessToken(TokenThread.appid, TokenThread.appsecret);
+
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">null</span> != at) {
+            <span class="hljs-comment">// &#x8C03;&#x7528;&#x63A5;&#x53E3;&#x521B;&#x5EFA;&#x83DC;&#x5355;</span>
+            <span class="hljs-keyword">int</span> result = WeixinUtil.createMenu(getMenu(), at.getToken());
+
+            <span class="hljs-comment">// &#x5224;&#x65AD;&#x83DC;&#x5355;&#x521B;&#x5EFA;&#x7ED3;&#x679C;</span>
+            <span class="hljs-keyword">if</span> (<span class="hljs-number">0</span> == result)
+                log.info(<span class="hljs-string">&quot;Menu create SUCCESS!&quot;</span>);
+            <span class="hljs-keyword">else</span>
+                log.info(<span class="hljs-string">&quot;Menu create FAIL, ERROR CODE:&quot;</span> + result);
+        }
+    }
+
+    <span class="hljs-javadoc">/**
+     * &#x7EC4;&#x88C5;&#x83DC;&#x5355;&#x6570;&#x636E;
+     *
+     *<span class="hljs-javadoctag"> @return</span>
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Menu <span class="hljs-title">getMenu</span><span class="hljs-params">()</span> </span>{
+        CommonButton btn11 = <span class="hljs-keyword">new</span> CommonButton();
+        btn11.setName(<span class="hljs-string">&quot;&#x5929;&#x6C14;&#x9884;&#x62A5;&quot;</span>);
+        btn11.setType(<span class="hljs-string">&quot;click&quot;</span>);
+        btn11.setKey(<span class="hljs-string">&quot;11&quot;</span>);
+
+        CommonButton btn12 = <span class="hljs-keyword">new</span> CommonButton();
+        btn12.setName(<span class="hljs-string">&quot;&#x516C;&#x4EA4;&#x67E5;&#x8BE2;&quot;</span>);
+        btn12.setType(<span class="hljs-string">&quot;click&quot;</span>);
+        btn12.setKey(<span class="hljs-string">&quot;12&quot;</span>);
+
+        CommonButton btn13 = <span class="hljs-keyword">new</span> CommonButton();
+        btn13.setName(<span class="hljs-string">&quot;&#x5468;&#x8FB9;&#x641C;&#x7D22;&quot;</span>);
+        btn13.setType(<span class="hljs-string">&quot;click&quot;</span>);
+        btn13.setKey(<span class="hljs-string">&quot;13&quot;</span>);
+
+        CommonButton btn14 = <span class="hljs-keyword">new</span> CommonButton();
+        btn14.setName(<span class="hljs-string">&quot;&#x5386;&#x53F2;&#x4E0A;&#x7684;&#x4ECA;&#x5929;&quot;</span>);
+        btn14.setType(<span class="hljs-string">&quot;click&quot;</span>);
+        btn14.setKey(<span class="hljs-string">&quot;14&quot;</span>);
+
+        CommonButton btn21 = <span class="hljs-keyword">new</span> CommonButton();
+        btn21.setName(<span class="hljs-string">&quot;&#x6B4C;&#x66F2;&#x70B9;&#x64AD;&quot;</span>);
+        btn21.setType(<span class="hljs-string">&quot;click&quot;</span>);
+        btn21.setKey(<span class="hljs-string">&quot;21&quot;</span>);
+
+        CommonButton btn22 = <span class="hljs-keyword">new</span> CommonButton();
+        btn22.setName(<span class="hljs-string">&quot;&#x7ECF;&#x5178;&#x6E38;&#x620F;&quot;</span>);
+        btn22.setType(<span class="hljs-string">&quot;click&quot;</span>);
+        btn22.setKey(<span class="hljs-string">&quot;22&quot;</span>);
+
+        CommonButton btn23 = <span class="hljs-keyword">new</span> CommonButton();
+        btn23.setName(<span class="hljs-string">&quot;&#x7F8E;&#x5973;&#x7535;&#x53F0;&quot;</span>);
+        btn23.setType(<span class="hljs-string">&quot;click&quot;</span>);
+        btn23.setKey(<span class="hljs-string">&quot;23&quot;</span>);
+
+        CommonButton btn24 = <span class="hljs-keyword">new</span> CommonButton();
+        btn24.setName(<span class="hljs-string">&quot;&#x4EBA;&#x8138;&#x8BC6;&#x522B;&quot;</span>);
+        btn24.setType(<span class="hljs-string">&quot;click&quot;</span>);
+        btn24.setKey(<span class="hljs-string">&quot;24&quot;</span>);
+
+        CommonButton btn25 = <span class="hljs-keyword">new</span> CommonButton();
+        btn25.setName(<span class="hljs-string">&quot;&#x804A;&#x5929;&#x5520;&#x55D1;&quot;</span>);
+        btn25.setType(<span class="hljs-string">&quot;click&quot;</span>);
+        btn25.setKey(<span class="hljs-string">&quot;25&quot;</span>);
+
+        CommonButton btn31 = <span class="hljs-keyword">new</span> CommonButton();
+        btn31.setName(<span class="hljs-string">&quot;Q&#x53CB;&#x5708;&quot;</span>);
+        btn31.setType(<span class="hljs-string">&quot;click&quot;</span>);
+        btn31.setKey(<span class="hljs-string">&quot;31&quot;</span>);
+
+        CommonButton btn33 = <span class="hljs-keyword">new</span> CommonButton();
+        btn33.setName(<span class="hljs-string">&quot;&#x5E7D;&#x9ED8;&#x7B11;&#x8BDD;&quot;</span>);
+        btn33.setType(<span class="hljs-string">&quot;click&quot;</span>);
+        btn33.setKey(<span class="hljs-string">&quot;33&quot;</span>);
+
+        CommonButton btn34 = <span class="hljs-keyword">new</span> CommonButton();
+        btn34.setName(<span class="hljs-string">&quot;&#x65E0;&#x53CD;&#x9988;&#x83DC;&#x5355;&quot;</span>);
+        btn34.setType(<span class="hljs-string">&quot;click&quot;</span>);
+        btn34.setKey(<span class="hljs-string">&quot;34&quot;</span>);
+
+        ViewButton btn32 = <span class="hljs-keyword">new</span> ViewButton();
+        btn32.setName(<span class="hljs-string">&quot;&#x4F7F;&#x7528;&#x5E2E;&#x52A9;&quot;</span>);
+        btn32.setType(<span class="hljs-string">&quot;view&quot;</span>);
+        btn32.setUrl(<span class="hljs-string">&quot;http://www.cnblogs.com/chanshuyi&quot;</span>);
+
+        ComplexButton mainBtn1 = <span class="hljs-keyword">new</span> ComplexButton();
+        mainBtn1.setName(<span class="hljs-string">&quot;&#x751F;&#x6D3B;&#x52A9;&#x624B;&quot;</span>);
+        mainBtn1.setSub_button(<span class="hljs-keyword">new</span> Button[] { btn11, btn12, btn13, btn14 });
+
+        ComplexButton mainBtn2 = <span class="hljs-keyword">new</span> ComplexButton();
+        mainBtn2.setName(<span class="hljs-string">&quot;&#x4F11;&#x95F2;&#x9A7F;&#x7AD9;&quot;</span>);
+        mainBtn2.setSub_button(<span class="hljs-keyword">new</span> Button[] { btn21, btn22, btn23, btn24, btn25 });
+
+        ComplexButton mainBtn3 = <span class="hljs-keyword">new</span> ComplexButton();
+        mainBtn3.setName(<span class="hljs-string">&quot;&#x66F4;&#x591A;&quot;</span>);
+        mainBtn3.setSub_button(<span class="hljs-keyword">new</span> Button[] { btn31, btn33, btn34, btn32 });
+
+        <span class="hljs-javadoc">/**
+         * &#x8FD9;&#x662F;&#x516C;&#x4F17;&#x53F7;xiaoqrobot&#x76EE;&#x524D;&#x7684;&#x83DC;&#x5355;&#x7ED3;&#x6784;&#xFF0C;&#x6BCF;&#x4E2A;&#x4E00;&#x7EA7;&#x83DC;&#x5355;&#x90FD;&#x6709;&#x4E8C;&#x7EA7;&#x83DC;&#x5355;&#x9879;&lt;br&gt;
+         *
+         * &#x5728;&#x67D0;&#x4E2A;&#x4E00;&#x7EA7;&#x83DC;&#x5355;&#x4E0B;&#x6CA1;&#x6709;&#x4E8C;&#x7EA7;&#x83DC;&#x5355;&#x7684;&#x60C5;&#x51B5;&#xFF0C;menu&#x8BE5;&#x5982;&#x4F55;&#x5B9A;&#x4E49;&#x5462;&#xFF1F;&lt;br&gt;
+         * &#x6BD4;&#x5982;&#xFF0C;&#x7B2C;&#x4E09;&#x4E2A;&#x4E00;&#x7EA7;&#x83DC;&#x5355;&#x9879;&#x4E0D;&#x662F;&#x201C;&#x66F4;&#x591A;&#x4F53;&#x9A8C;&#x201D;&#xFF0C;&#x800C;&#x76F4;&#x63A5;&#x662F;&#x201C;&#x5E7D;&#x9ED8;&#x7B11;&#x8BDD;&#x201D;&#xFF0C;&#x90A3;&#x4E48;menu&#x5E94;&#x8BE5;&#x8FD9;&#x6837;&#x5B9A;&#x4E49;&#xFF1A;&lt;br&gt;
+         * menu.setButton(new Button[] { mainBtn1, mainBtn2, btn33 });
+         */</span>
+        Menu menu = <span class="hljs-keyword">new</span> Menu();
+        menu.setButton(<span class="hljs-keyword">new</span> Button[] { mainBtn1, mainBtn2, mainBtn3 });
+
+        <span class="hljs-keyword">return</span> menu;
+    }
+}
+</code></pre>
+<p><code>WeixinUtil.getAccessToken</code>&#x8868;&#x793A;&#x83B7;&#x53D6;token&#x5BF9;&#x8C61;&#xFF0C;token&#x5BF9;&#x8C61;&#x6307;&#x7684;&#x662F;&#x8BF7;&#x6C42;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#x7684;&#x4EE4;&#x724C;&#x3002;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x4E0B;&#x4E2A;&#x7AE0;&#x8282;&#x4E2D;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#x3002;</p>
+<p><code>int result = WeixinUtil.createMenu(getMenu(), at.getToken());</code> &#x8868;&#x793A;&#x5411;&#x5FAE;&#x4FE1;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;HTTPS&#x8BF7;&#x6C42;&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x83DC;&#x5355;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-javadoc">/**
+     * &#x521B;&#x5EFA;&#x83DC;&#x5355;
+     *
+     *<span class="hljs-javadoctag"> @param</span> menu &#x83DC;&#x5355;&#x5B9E;&#x4F8B;
+     *<span class="hljs-javadoctag"> @param</span> accessToken &#x6709;&#x6548;&#x7684;access_token
+     *<span class="hljs-javadoctag"> @return</span> 0&#x8868;&#x793A;&#x6210;&#x529F;&#xFF0C;&#x5176;&#x4ED6;&#x503C;&#x8868;&#x793A;&#x5931;&#x8D25;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">createMenu</span><span class="hljs-params">(Menu menu, String accessToken)</span> </span>{
+        log.info(<span class="hljs-string">&quot;Create menu....&quot;</span>);
+        <span class="hljs-keyword">int</span> result = <span class="hljs-number">0</span>;
+
+        <span class="hljs-comment">// &#x62FC;&#x88C5;&#x521B;&#x5EFA;&#x83DC;&#x5355;&#x7684;url</span>
+        String url = menu_create_url.replace(<span class="hljs-string">&quot;ACCESS_TOKEN&quot;</span>, accessToken);
+        <span class="hljs-comment">// &#x5C06;&#x83DC;&#x5355;&#x5BF9;&#x8C61;&#x8F6C;&#x6362;&#x6210;json&#x5B57;&#x7B26;&#x4E32;</span>
+        String jsonMenu = JSONObject.fromObject(menu).toString();
+        <span class="hljs-comment">// &#x8C03;&#x7528;&#x63A5;&#x53E3;&#x521B;&#x5EFA;&#x83DC;&#x5355;</span>
+        JSONObject jsonObject = httpRequest(url, <span class="hljs-string">&quot;POST&quot;</span>, jsonMenu);
+
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">null</span> != jsonObject) {
+            <span class="hljs-keyword">if</span> (<span class="hljs-number">0</span> != jsonObject.getInt(<span class="hljs-string">&quot;errcode&quot;</span>)) {
+                result = jsonObject.getInt(<span class="hljs-string">&quot;errcode&quot;</span>);
+                log.error(<span class="hljs-string">&quot;&#x521B;&#x5EFA;&#x83DC;&#x5355;&#x5931;&#x8D25; errcode:{} errmsg:{}&quot;</span>, jsonObject.getInt(<span class="hljs-string">&quot;errcode&quot;</span>), jsonObject.getString(<span class="hljs-string">&quot;errmsg&quot;</span>));
+            }
+        }
+
+        log.info(<span class="hljs-string">&quot;/Create menu....&quot;</span>);
+        <span class="hljs-keyword">return</span> result;
+    }
+</code></pre>
+<p>&#x6700;&#x540E;&#x5728;InitServlet&#x7684;init&#x65B9;&#x6CD5;&#x91CC;&#x589E;&#x52A0;<code>new MenuManager().createMenu()</code>&#x4EE3;&#x7801;&#x4EE5;&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x83DC;&#x5355;&#x5373;&#x53EF;&#x3002;&#x4FEE;&#x6539;&#x540E;&#x7684;init&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">init</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> ServletException </span>{
+        <span class="hljs-comment">//&#x5C06;web.xml&#x4E2D;&#x7684;appid,appsecret&#x8D4B;&#x503C;&#x5230;TokenThread&#x4E2D;</span>
+        log.info(<span class="hljs-string">&quot;**************************************************&quot;</span>);
+        log.info(<span class="hljs-string">&quot;**** Start init ACCESS_TOKEN Servlet. &quot;</span>);
+        TokenThread.appid = getInitParameter(<span class="hljs-string">&quot;appid&quot;</span>);
+        TokenThread.appsecret = getInitParameter(<span class="hljs-string">&quot;appsecret&quot;</span>);
+
+        log.info(<span class="hljs-string">&quot;**** Weixin api appid:{}&quot;</span>, TokenThread.appid);
+        log.info(<span class="hljs-string">&quot;**** Weixin api appsecret:{}&quot;</span>, TokenThread.appsecret);
+
+        <span class="hljs-comment">//&#x5411;&#x5FAE;&#x4FE1;&#x670D;&#x52A1;&#x5668;&#x8BF7;&#x6C42;&#x521B;&#x5EFA;&#x83DC;&#x5355;</span>
+        log.info(<span class="hljs-string">&quot;**** Start to create self-define Menu.&quot;</span>);
+        <span class="hljs-keyword">new</span> MenuManager().createMenu();
+
+        <span class="hljs-comment">// &#x672A;&#x914D;&#x7F6E;appid&#x3001;appsecret&#x65F6;&#x7ED9;&#x51FA;&#x63D0;&#x793A;</span>
+        <span class="hljs-keyword">if</span> (<span class="hljs-string">&quot;&quot;</span>.equals(TokenThread.appid) || <span class="hljs-string">&quot;&quot;</span>.equals(TokenThread.appsecret)) {
+            log.error(<span class="hljs-string">&quot;appid and appsecret configuration error, please check carefully.&quot;</span>);
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-comment">// &#x542F;&#x52A8;&#x5B9A;&#x65F6;&#x83B7;&#x53D6;access_token&#x7684;&#x7EBF;&#x7A0B;</span>
+            <span class="hljs-keyword">new</span> Thread(<span class="hljs-keyword">new</span> TokenThread()).start();
+        }
+    }
+</code></pre>
+<p>&#x5176;&#x4E2D;&#x4E0A;&#x9762;&#x6709;</p>
+<pre><code>WeixinUtil.getAccessToken(TokenThread.appid, TokenThread.appsecret)
+</code></pre><p>&#x7B49;&#x5173;&#x4E8E;token&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x4E0B;&#x4E00;&#x8282;&#x4E2D;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chapter3/02_01_menu_1_menu_pojo.html" class="navigation navigation-prev " aria-label="Previous page: 定义菜单类POJO对象"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chapter3/02_03_menu_3_keep_token_valid.html" class="navigation navigation-next " aria-label="Next page: 获取access_token并保证长期有效"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

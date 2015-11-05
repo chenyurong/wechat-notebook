@@ -1,0 +1,565 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>九大高级接口使用 | wechat Notebook</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.1.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../chapter4/03_01_advanced1_voice_recognition.html" />
+    
+    
+    <link rel="prev" href="../chapter3/02_03_menu_3_keep_token_valid.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="4" data-basepath=".." data-revision="Thu Nov 05 2015 21:41:53 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="输入并搜索" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        微信公众号开发概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter1/00_00_wechat.html">
+            
+                
+                    <a href="../chapter1/00_00_wechat.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        微信公众号开发介绍
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="chapter1/00_01_wechat_intro.html">
+            
+                
+                    <a href="../chapter1/00_01_wechat_intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        微信公众号介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1/00_02_wechat_server_config.html">
+            
+                
+                    <a href="../chapter1/00_02_wechat_server_config.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        搭建开发服务器环境
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter1/00_03_become_wechat_developer.html">
+            
+                
+                    <a href="../chapter1/00_03_become_wechat_developer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        校验通过开发者模式
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="chapter2/01_00_handle_message.html">
+            
+                
+                    <a href="../chapter2/01_00_handle_message.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        处理微信服务器消息
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="chapter2/01_01_handle_message_1_receive_send_msg.html">
+            
+                
+                    <a href="../chapter2/01_01_handle_message_1_receive_send_msg.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        简单的例子
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter2/01_02_handle_message_2_pojo.html">
+            
+                
+                    <a href="../chapter2/01_02_handle_message_2_pojo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        定义消息类对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chapter2/01_03_handle_message_3_parse_unparse_xml.html">
+            
+                
+                    <a href="../chapter2/01_03_handle_message_3_parse_unparse_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        解析/封装XML消息
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="chapter3/02_00_menu.html">
+            
+                
+                    <a href="../chapter3/02_00_menu.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        自定义菜单开发
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="chapter3/02_01_menu_1_menu_pojo.html">
+            
+                
+                    <a href="../chapter3/02_01_menu_1_menu_pojo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        定义菜单类POJO对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="chapter3/02_02_menu_2_create_menu.html">
+            
+                
+                    <a href="../chapter3/02_02_menu_2_create_menu.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        创建自定义菜单
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="chapter3/02_03_menu_3_keep_token_valid.html">
+            
+                
+                    <a href="../chapter3/02_03_menu_3_keep_token_valid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        获取access_token并保证长期有效
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="4" data-path="chapter4/03_00_advanced.html">
+            
+                
+                    <a href="../chapter4/03_00_advanced.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        九大高级接口使用
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="chapter4/03_01_advanced1_voice_recognition.html">
+            
+                
+                    <a href="../chapter4/03_01_advanced1_voice_recognition.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        语音接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="chapter4/03_02_advanced2_kefu.html">
+            
+                
+                    <a href="../chapter4/03_02_advanced2_kefu.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        客服接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="chapter4/03_03_advanced3_web_OAuth.html">
+            
+                
+                    <a href="../chapter4/03_03_advanced3_web_OAuth.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        网页授权接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="chapter4/03_04_advanced4_qrcode.html">
+            
+                
+                    <a href="../chapter4/03_04_advanced4_qrcode.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        二维码接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="chapter4/03_05_advanced5_location.html">
+            
+                
+                    <a href="../chapter4/03_05_advanced5_location.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        地理位置接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="chapter4/03_06_advanced6_userinfo.html">
+            
+                
+                    <a href="../chapter4/03_06_advanced6_userinfo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        用户基本信息接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="chapter4/03_07_advanced7_userlist.html">
+            
+                
+                    <a href="../chapter4/03_07_advanced7_userlist.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        用户列表接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="chapter4/03_08_advanced8_usergroup.html">
+            
+                
+                    <a href="../chapter4/03_08_advanced8_usergroup.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        用户分组接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="chapter4/03_09_advanced9_updownload.html">
+            
+                
+                    <a href="../chapter4/03_09_advanced9_updownload.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        上传下载接口
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                本书使用 GitBook 发布
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="目录"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="搜索"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="字体设置"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">衬线体</button>
+        <button type="button" data-font="1" class="button">无衬线体</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">白色</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">棕褐色</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">夜间</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="分享"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    分享到 Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    分享到 Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    分享到 Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    分享到 Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    分享到 Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >wechat Notebook</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="%E9%AB%98%E7%BA%A7%E6%8E%A5%E5%8F%A3%E4%BD%BF%E7%94%A8">&#x9AD8;&#x7EA7;&#x63A5;&#x53E3;&#x4F7F;&#x7528;</h1>
+<p>&#x4E0A;&#x9762;&#x7684;&#x7AE0;&#x8282;&#x4E2D;&#x6211;&#x4EEC;&#x4ECB;&#x7ECD;&#x4E86;&#x81EA;&#x5B9A;&#x4E49;&#x83DC;&#x5355;&#x7684;&#x5F00;&#x53D1;&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x7AE0;&#x8282;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4ECB;&#x7ECD;&#x5FAE;&#x4FE1;&#x7684;&#x4E5D;&#x5927;&#x9AD8;&#x7EA7;&#x63A5;&#x53E3;&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chapter3/02_03_menu_3_keep_token_valid.html" class="navigation navigation-prev " aria-label="Previous page: 获取access_token并保证长期有效"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chapter4/03_01_advanced1_voice_recognition.html" class="navigation navigation-next " aria-label="Next page: 语音接口"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

@@ -1,0 +1,775 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>上传下载接口 | wechat Notebook</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.1.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    
+    
+    
+    <link rel="prev" href="../chapter4/03_08_advanced8_usergroup.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="4.9" data-basepath=".." data-revision="Thu Nov 05 2015 21:41:53 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="输入并搜索" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        微信公众号开发概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter1/00_00_wechat.html">
+            
+                
+                    <a href="../chapter1/00_00_wechat.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        微信公众号开发介绍
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="chapter1/00_01_wechat_intro.html">
+            
+                
+                    <a href="../chapter1/00_01_wechat_intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        微信公众号介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1/00_02_wechat_server_config.html">
+            
+                
+                    <a href="../chapter1/00_02_wechat_server_config.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        搭建开发服务器环境
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter1/00_03_become_wechat_developer.html">
+            
+                
+                    <a href="../chapter1/00_03_become_wechat_developer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        校验通过开发者模式
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="chapter2/01_00_handle_message.html">
+            
+                
+                    <a href="../chapter2/01_00_handle_message.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        处理微信服务器消息
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="chapter2/01_01_handle_message_1_receive_send_msg.html">
+            
+                
+                    <a href="../chapter2/01_01_handle_message_1_receive_send_msg.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        简单的例子
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter2/01_02_handle_message_2_pojo.html">
+            
+                
+                    <a href="../chapter2/01_02_handle_message_2_pojo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        定义消息类对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chapter2/01_03_handle_message_3_parse_unparse_xml.html">
+            
+                
+                    <a href="../chapter2/01_03_handle_message_3_parse_unparse_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        解析/封装XML消息
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="chapter3/02_00_menu.html">
+            
+                
+                    <a href="../chapter3/02_00_menu.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        自定义菜单开发
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="chapter3/02_01_menu_1_menu_pojo.html">
+            
+                
+                    <a href="../chapter3/02_01_menu_1_menu_pojo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        定义菜单类POJO对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="chapter3/02_02_menu_2_create_menu.html">
+            
+                
+                    <a href="../chapter3/02_02_menu_2_create_menu.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        创建自定义菜单
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="chapter3/02_03_menu_3_keep_token_valid.html">
+            
+                
+                    <a href="../chapter3/02_03_menu_3_keep_token_valid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        获取access_token并保证长期有效
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="chapter4/03_00_advanced.html">
+            
+                
+                    <a href="../chapter4/03_00_advanced.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        九大高级接口使用
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="chapter4/03_01_advanced1_voice_recognition.html">
+            
+                
+                    <a href="../chapter4/03_01_advanced1_voice_recognition.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        语音接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="chapter4/03_02_advanced2_kefu.html">
+            
+                
+                    <a href="../chapter4/03_02_advanced2_kefu.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        客服接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="chapter4/03_03_advanced3_web_OAuth.html">
+            
+                
+                    <a href="../chapter4/03_03_advanced3_web_OAuth.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        网页授权接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="chapter4/03_04_advanced4_qrcode.html">
+            
+                
+                    <a href="../chapter4/03_04_advanced4_qrcode.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        二维码接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="chapter4/03_05_advanced5_location.html">
+            
+                
+                    <a href="../chapter4/03_05_advanced5_location.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        地理位置接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="chapter4/03_06_advanced6_userinfo.html">
+            
+                
+                    <a href="../chapter4/03_06_advanced6_userinfo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        用户基本信息接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="chapter4/03_07_advanced7_userlist.html">
+            
+                
+                    <a href="../chapter4/03_07_advanced7_userlist.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        用户列表接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="chapter4/03_08_advanced8_usergroup.html">
+            
+                
+                    <a href="../chapter4/03_08_advanced8_usergroup.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        用户分组接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.9" data-path="chapter4/03_09_advanced9_updownload.html">
+            
+                
+                    <a href="../chapter4/03_09_advanced9_updownload.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        上传下载接口
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                本书使用 GitBook 发布
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="目录"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="搜索"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="字体设置"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">衬线体</button>
+        <button type="button" data-font="1" class="button">无衬线体</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">白色</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">棕褐色</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">夜间</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="分享"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    分享到 Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    分享到 Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    分享到 Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    分享到 Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    分享到 Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >wechat Notebook</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="%E9%AB%98%E7%BA%A7%E6%8E%A5%E5%8F%A3%E4%BD%BF%E7%94%A8%E2%80%94%E2%80%94%E4%B8%8A%E4%BC%A0%E5%8F%8A%E4%B8%8B%E8%BD%BD%E5%A4%9A%E5%AA%92%E4%BD%93%E6%96%87%E4%BB%B6">&#x9AD8;&#x7EA7;&#x63A5;&#x53E3;&#x4F7F;&#x7528;&#x2014;&#x2014;&#x4E0A;&#x4F20;&#x53CA;&#x4E0B;&#x8F7D;&#x591A;&#x5A92;&#x4F53;&#x6587;&#x4EF6;</h1>
+<p>&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x4E0A;&#x4F20;&#x548C;&#x4E0B;&#x8F7D;&#x7D20;&#x6750;&#xFF08;&#x56FE;&#x7247;&#x3001;&#x89C6;&#x9891;&#x3001;&#x8BED;&#x97F3;&#xFF09;&#xFF0C;&#x4F7F;&#x5F97;&#x4E0E;&#x7528;&#x6237;&#x7684;&#x4E92;&#x52A8;&#x53D8;&#x5F97;&#x66F4;&#x52A0;&#x4E30;&#x5BCC;&#x3002;</p>
+<h2 id="%E7%B4%A0%E6%9D%90%E4%B8%8A%E4%BC%A0%E6%8E%A5%E5%8F%A3">&#x7D20;&#x6750;&#x4E0A;&#x4F20;&#x63A5;&#x53E3;</h2>
+<p>&#x4E0A;&#x4F20;&#x7D20;&#x6750;&#x652F;&#x6301;&#x56DB;&#x79CD;&#x7C7B;&#x578B;&#xFF1A;image&#x3001;voice&#x3001;video&#x3001;thumb&#xFF0C;&#x5206;&#x522B;&#x662F;&#x56FE;&#x7247;&#x3001;&#x8BED;&#x97F3;&#x3001;&#x89C6;&#x9891;&#x3001;&#x7F29;&#x7565;&#x56FE;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5728;WeixinUtil.java&#x7C7B;&#x4E2D;&#x589E;&#x52A0;uploadMedia()&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-javadoc">/**
+     * &#x4E0A;&#x4F20;&#x5A92;&#x4F53;&#x6587;&#x4EF6;
+     *<span class="hljs-javadoctag"> @param</span> accessToken
+     *<span class="hljs-javadoctag"> @param</span> type &#x5A92;&#x4F53;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#xFF08;image&#x3001;voice&#x3001;video&#x548C;thumb&#xFF09;
+     *<span class="hljs-javadoctag"> @param</span> mediaFileUrl &#x5A92;&#x4F53;&#x6587;&#x4EF6;&#x7684;url
+     *<span class="hljs-javadoctag"> @return</span>
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> WeixinMedia <span class="hljs-title">uploadMedia</span><span class="hljs-params">(String accessToken, String type, String mediaFileUrl)</span></span>{
+        WeixinMedia weixinMedia = <span class="hljs-keyword">null</span>;
+        <span class="hljs-comment">//&#x62FC;&#x88C5;&#x8BF7;&#x6C42;&#x5730;&#x5740;</span>
+        String uploadMediaUrl = <span class="hljs-string">&quot;http://api.weixin.qq.com/cgi-bin/media/upload?access_token=ACCESS_TOKEN&amp;type=TYPE&quot;</span>;
+        uploadMediaUrl = uploadMediaUrl.replace(<span class="hljs-string">&quot;ACCESS_TOKEN&quot;</span>, accessToken).replace(<span class="hljs-string">&quot;TYPE&quot;</span>, type);
+
+        <span class="hljs-comment">//&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x5206;&#x9694;&#x7B26;</span>
+        String boundary = <span class="hljs-string">&quot;------------7da2e536604c8&quot;</span>;
+        <span class="hljs-keyword">try</span>{
+            URL uploadUrl = <span class="hljs-keyword">new</span> URL(uploadMediaUrl);
+            HttpURLConnection uploadConn = (HttpURLConnection)uploadUrl.openConnection();
+            uploadConn.setDoOutput(<span class="hljs-keyword">true</span>);
+            uploadConn.setDoInput(<span class="hljs-keyword">true</span>);
+            uploadConn.setRequestMethod(<span class="hljs-string">&quot;POST&quot;</span>);
+            <span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x8BF7;&#x6C42;&#x5934;Content-Type</span>
+            uploadConn.setRequestProperty(<span class="hljs-string">&quot;Content-Type&quot;</span>, <span class="hljs-string">&quot;multipart/form-data;boundary=&quot;</span> + boundary);
+            <span class="hljs-comment">//&#x83B7;&#x53D6;&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x7684;&#x8F93;&#x51FA;&#x6D41;&#xFF08;&#x5F80;&#x5FAE;&#x4FE1;&#x670D;&#x52A1;&#x5668;&#x5199;&#x6570;&#x636E;&#xFF09;</span>
+            OutputStream outputStream = uploadConn.getOutputStream();
+
+            URL mediaUrl = <span class="hljs-keyword">new</span> URL(mediaFileUrl);
+            HttpURLConnection mediaConn = (HttpURLConnection)mediaUrl.openConnection();
+            mediaConn.setDoInput(<span class="hljs-keyword">true</span>);
+            mediaConn.setRequestMethod(<span class="hljs-string">&quot;GET&quot;</span>);
+
+            <span class="hljs-comment">//&#x4ECE;&#x8BF7;&#x6C42;&#x5934;&#x4E2D;&#x83B7;&#x53D6;&#x5185;&#x5BB9;&#x7C7B;&#x578B;</span>
+            String contentType = mediaConn.getHeaderField(<span class="hljs-string">&quot;Content-Type&quot;</span>);
+            <span class="hljs-comment">//&#x6839;&#x636E;&#x5185;&#x5BB9;&#x7C7B;&#x578B;&#x5224;&#x65AD;&#x7528;&#x6237;&#x6269;&#x5C55;&#x540D;</span>
+            String fileExt = CommonUtil.getFileExt(contentType);
+            <span class="hljs-comment">//&#x8BF7;&#x6C42;&#x4F53;&#x5F00;&#x59CB;</span>
+            outputStream.write((<span class="hljs-string">&quot;--&quot;</span> + boundary + <span class="hljs-string">&quot;\r\n&quot;</span>).getBytes());
+            outputStream.write(String.format(<span class="hljs-string">&quot;Content-Disposition:form-data;name=\&quot;media\&quot;; filename=\&quot;file1%s\&quot;\r\n&quot;</span>, fileExt).getBytes());
+            outputStream.write(String.format(<span class="hljs-string">&quot;Content-Type:%s\r\n\r\n&quot;</span>, contentType).getBytes());
+
+            <span class="hljs-comment">//&#x83B7;&#x53D6;&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#x7684;&#x8F93;&#x5165;&#x6D41;</span>
+            BufferedInputStream bis = <span class="hljs-keyword">new</span> BufferedInputStream(mediaConn.getInputStream());
+            <span class="hljs-keyword">byte</span>[] buf = <span class="hljs-keyword">new</span> <span class="hljs-keyword">byte</span>[<span class="hljs-number">8096</span>];
+            <span class="hljs-keyword">int</span> size = <span class="hljs-number">0</span>;
+            <span class="hljs-keyword">while</span>((size = bis.read(buf)) != -<span class="hljs-number">1</span>){
+                <span class="hljs-comment">//&#x5C06;&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#x5199;&#x9053;&#x8F93;&#x51FA;&#x6D41;&#xFF08;&#x5F80;&#x5FAE;&#x4FE1;&#x670D;&#x52A1;&#x5668;&#x5199;&#x6570;&#x636E;&#xFF09;</span>
+                outputStream.write(buf, <span class="hljs-number">0</span>, size);
+            }
+            <span class="hljs-comment">//&#x8BF7;&#x6C42;&#x4F53;&#x7ED3;&#x675F;</span>
+            outputStream.write((<span class="hljs-string">&quot;\r\n--&quot;</span> + boundary + <span class="hljs-string">&quot;--\r\n&quot;</span>).getBytes());
+            outputStream.close();
+            bis.close();
+            mediaConn.disconnect();
+
+            <span class="hljs-comment">//&#x83B7;&#x53D6;&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x7684;&#x8F93;&#x5165;&#x6D41;&#xFF08;&#x4ECE;&#x5FAE;&#x4FE1;&#x670D;&#x52A1;&#x5668;&#x8BFB;&#x6570;&#x636E;&#xFF09;  &#x8BFB;&#x53D6;&#x8FD4;&#x56DE;&#x72B6;&#x6001;</span>
+            InputStream inputStream = uploadConn.getInputStream();
+            InputStreamReader inputStreamReader = <span class="hljs-keyword">new</span> InputStreamReader(inputStream, <span class="hljs-string">&quot;utf-8&quot;</span>);
+            BufferedReader bufferedReader = <span class="hljs-keyword">new</span> BufferedReader(inputStreamReader);
+            StringBuffer buffer = <span class="hljs-keyword">new</span> StringBuffer();
+            String str = <span class="hljs-keyword">null</span>;
+            <span class="hljs-keyword">while</span>((str = bufferedReader.readLine()) != <span class="hljs-keyword">null</span>){
+                buffer.append(str);
+            }
+            bufferedReader.close();
+            inputStreamReader.close();
+            <span class="hljs-comment">//&#x91CA;&#x653E;&#x8D44;&#x6E90;</span>
+            inputStream.close();
+            inputStream = <span class="hljs-keyword">null</span>;
+            uploadConn.disconnect();
+
+            <span class="hljs-comment">//&#x4F7F;&#x7528;JSON-lib&#x89E3;&#x6790;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;</span>
+            JSONObject jsonObject = JSONObject.fromObject(buffer.toString());
+            System.out.println(jsonObject);
+            weixinMedia = <span class="hljs-keyword">new</span> WeixinMedia();
+            weixinMedia.setType(jsonObject.getString(<span class="hljs-string">&quot;type&quot;</span>));
+            <span class="hljs-comment">//type&#x7B49;&#x4E8E;thumb&#x65F6;&#x7684;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x548C;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x4E0D;&#x4E00;&#x6837;</span>
+            <span class="hljs-keyword">if</span>(<span class="hljs-string">&quot;thumb&quot;</span>.equals(type)){
+                weixinMedia.setMediaId(jsonObject.getString(<span class="hljs-string">&quot;thumb_media_id&quot;</span>));
+            }<span class="hljs-keyword">else</span>{
+                weixinMedia.setMediaId(jsonObject.getString(<span class="hljs-string">&quot;media_id&quot;</span>));
+                weixinMedia.setCreatedAt(jsonObject.getInt(<span class="hljs-string">&quot;created_at&quot;</span>));
+            }
+        }<span class="hljs-keyword">catch</span> (Exception e){
+            weixinMedia = <span class="hljs-keyword">null</span>;
+            log.error(<span class="hljs-string">&quot;&#x4E0A;&#x4F20;&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#x5931;&#x8D25;&#xFF1A;{}&quot;</span> + e);
+        }
+
+        <span class="hljs-keyword">return</span> weixinMedia;
+    }
+</code></pre>
+<p>&#x5176;&#x4E2D;WeixinMedia&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo;
+
+<span class="hljs-javadoc">/**
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015.10.31
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WeixinMedia</span> </span>{
+    <span class="hljs-comment">//&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#x7C7B;&#x578B;</span>
+    <span class="hljs-keyword">private</span> String type;
+    <span class="hljs-comment">//&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#x6807;&#x8BC6;&#x6216;&#x7F29;&#x7565;&#x56FE;&#x7684;&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#x6807;&#x8BC6;</span>
+    <span class="hljs-keyword">private</span> String mediaId;
+    <span class="hljs-comment">//&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x65F6;&#x95F4;</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> createdAt;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getMediaId</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> mediaId;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setMediaId</span><span class="hljs-params">(String mediaId)</span> </span>{
+        <span class="hljs-keyword">this</span>.mediaId = mediaId;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getType</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> type;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setType</span><span class="hljs-params">(String type)</span> </span>{
+        <span class="hljs-keyword">this</span>.type = type;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getCreatedAt</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> createdAt;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setCreatedAt</span><span class="hljs-params">(<span class="hljs-keyword">int</span> createdAt)</span> </span>{
+        <span class="hljs-keyword">this</span>.createdAt = createdAt;
+    }
+}
+</code></pre>
+<p>CommonUtil.getFileExt()&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">getFileExt</span><span class="hljs-params">(String contentType)</span></span>{
+    String fileExt = <span class="hljs-string">&quot;&quot;</span>;
+    <span class="hljs-keyword">if</span>(<span class="hljs-string">&quot;image/jpeg&quot;</span>.equals(contentType)){
+        fileExt = <span class="hljs-string">&quot;.jpg&quot;</span>;
+    }<span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span><span class="hljs-params">(<span class="hljs-string">&quot;audio/mpeg&quot;</span>.equals(contentType)</span>)</span>{
+        fileExt = <span class="hljs-string">&quot;.mp3&quot;</span>;
+    }<span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span><span class="hljs-params">(<span class="hljs-string">&quot;audio/amr&quot;</span>.equals(contentType)</span>)</span>{
+        fileExt = <span class="hljs-string">&quot;.amr&quot;</span>;
+    }<span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span><span class="hljs-params">(<span class="hljs-string">&quot;video/mp4&quot;</span>.equals(contentType)</span>)</span>{
+        fileExt = <span class="hljs-string">&quot;.mp4&quot;</span>;
+    }<span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span><span class="hljs-params">(<span class="hljs-string">&quot;video/mpeg4&quot;</span>.equals(contentType)</span>)</span>{
+        fileExt = <span class="hljs-string">&quot;.mp4&quot;</span>;
+    }
+    <span class="hljs-keyword">return</span>  fileExt;
+}
+</code></pre>
+<p>&#x4E4B;&#x540E;&#x6211;&#x4EEC;&#x5728;&#x672C;&#x5730;&#x542F;&#x52A8;&#x4E00;&#x4E2A;Tomcat&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5C06;&#x4E00;&#x5F20;&#x56FE;&#x7247;&#x653E;&#x7F6E;&#x5728;Tomcat&#x670D;&#x52A1;&#x5668;&#x91CC;&#x3002;&#x4E4B;&#x540E;&#x5199;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x7C7B;&#x6765;&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-annotation">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">uploadMediaTest</span><span class="hljs-params">()</span></span>{ 
+    WeixinMedia weixinMedia = WeixinUtil.uploadMedia(accessToken, <span class="hljs-string">&quot;voice&quot;</span>, <span class="hljs-string">&quot;http://localhost:8080/test.mp3&quot;</span>);
+    System.out.println(weixinMedia.getMediaId());
+    System.out.println(weixinMedia.getType());
+    System.out.println(weixinMedia.getCreatedAt());
+}
+</code></pre>
+<h2 id="%E4%B8%8B%E8%BD%BD%E7%B4%A0%E6%9D%90%E6%96%87%E4%BB%B6">&#x4E0B;&#x8F7D;&#x7D20;&#x6750;&#x6587;&#x4EF6;</h2>
+<p>&#x6211;&#x4EEC;&#x5728;WeixinUtil&#x91CC;&#x589E;&#x52A0;&#x4E00;&#x4E2A;getMedia&#x65B9;&#x6CD5;&#xFF0C;&#x6765;&#x4E0B;&#x8F7D;&#x7D20;&#x6750;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-javadoc">/**
+ * &#x4E0B;&#x8F7D;&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#xFF08;&#x53EA;&#x652F;&#x6301;&#x4E0B;&#x8F7D;&#x56FE;&#x7247;&#x3001;&#x8BED;&#x97F3;&#x548C;&#x7F29;&#x7565;&#x56FE;&#x6587;&#x4EF6;&#xFF0C;&#x4E0D;&#x652F;&#x6301;&#x4E0B;&#x8F7D;&#x89C6;&#x9891;&#x6587;&#x4EF6;&#xFF09;
+ *<span class="hljs-javadoctag"> @param</span> accessToken
+ *<span class="hljs-javadoctag"> @param</span> mediaId
+ *<span class="hljs-javadoctag"> @param</span> savePath
+ *<span class="hljs-javadoctag"> @return</span>
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">getMedia</span><span class="hljs-params">(String accessToken, String mediaId, String savePath)</span></span>{
+    String filePath = <span class="hljs-keyword">null</span>;
+    <span class="hljs-comment">//&#x62FC;&#x63A5;&#x8BF7;&#x6C42;&#x5730;&#x5740;</span>
+    String requestUrl = <span class="hljs-string">&quot;https://api.weixin.qq.com/cgi-bin/media/get?access_token=ACCESS_TOKEN&amp;media_id=MEDIA_ID&quot;</span>;
+    requestUrl = requestUrl.replace(<span class="hljs-string">&quot;ACCESS_TOKEN&quot;</span>, accessToken).replace(<span class="hljs-string">&quot;MEDIA_ID&quot;</span>, mediaId);
+
+    <span class="hljs-keyword">try</span>{
+        URL url = <span class="hljs-keyword">new</span> URL(requestUrl);
+        HttpURLConnection conn = (HttpURLConnection)url.openConnection();
+        conn.setDoInput(<span class="hljs-keyword">true</span>);
+        conn.setRequestMethod(<span class="hljs-string">&quot;GET&quot;</span>);
+        <span class="hljs-keyword">if</span>(!savePath.endsWith(File.separator)){
+            savePath += File.separator;
+        }
+        <span class="hljs-comment">//&#x6839;&#x636E;&#x5185;&#x5BB9;&#x7C7B;&#x578B;&#x83B7;&#x53D6;&#x62D3;&#x5C55;&#x540D;</span>
+        String fileExt = CommonUtil.getFileExt(conn.getHeaderField(<span class="hljs-string">&quot;Content-Type&quot;</span>));
+        <span class="hljs-comment">//&#x5C06;mediaId&#x4F5C;&#x4E3A;&#x6587;&#x4EF6;&#x540D;</span>
+        filePath = savePath + mediaId + fileExt;
+
+        BufferedInputStream bis = <span class="hljs-keyword">new</span> BufferedInputStream(conn.getInputStream());
+        FileOutputStream fos = <span class="hljs-keyword">new</span> FileOutputStream(<span class="hljs-keyword">new</span> File(filePath));
+        <span class="hljs-keyword">byte</span>[] buf = <span class="hljs-keyword">new</span> <span class="hljs-keyword">byte</span>[<span class="hljs-number">8096</span>];
+        <span class="hljs-keyword">int</span> size = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">while</span>((size = bis.read(buf)) != -<span class="hljs-number">1</span>){
+            fos.write(buf, <span class="hljs-number">0</span>, size);
+        }
+        fos.close();
+        bis.close();
+
+        conn.disconnect();
+        log.info(<span class="hljs-string">&quot;&#x4E0B;&#x8F7D;&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#x6210;&#x529F;, filePath=&quot;</span> + filePath);
+    }<span class="hljs-keyword">catch</span> (Exception e){
+        filePath = <span class="hljs-string">&quot;&quot;</span>;
+        log.error(<span class="hljs-string">&quot;&#x4E0B;&#x8F7D;&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#x5931;&#x8D25;&#xFF1A;{}&quot;</span>, e);
+    }
+
+    <span class="hljs-keyword">return</span> filePath;
+}
+</code></pre>
+<p>&#x4E4B;&#x540E;&#x5199;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x7C7B;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-annotation">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">downloadMediaTest</span><span class="hljs-params">()</span></span>{
+    WeixinUtil.getMedia(accessToken, <span class="hljs-string">&quot;AHA2K_W0yh6skaZCykpV_DgLdXR8WjAIhBOsBQiQfSBEcocLtEY_rufFR-uOvPZo&quot;</span>, <span class="hljs-string">&quot;d:\\&quot;</span>);
+}
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x8981;&#x5C06;&#x4F60;&#x4F20;&#x5165;&#x7684;mediaId&#x6362;&#x6210;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chapter4/03_08_advanced8_usergroup.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 用户分组接口"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

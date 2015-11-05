@@ -1,0 +1,702 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>定义菜单类POJO对象 | wechat Notebook</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.1.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../chapter3/02_02_menu_2_create_menu.html" />
+    
+    
+    <link rel="prev" href="../chapter3/02_00_menu.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="3.1" data-basepath=".." data-revision="Thu Nov 05 2015 21:41:53 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="输入并搜索" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        微信公众号开发概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter1/00_00_wechat.html">
+            
+                
+                    <a href="../chapter1/00_00_wechat.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        微信公众号开发介绍
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="chapter1/00_01_wechat_intro.html">
+            
+                
+                    <a href="../chapter1/00_01_wechat_intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        微信公众号介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1/00_02_wechat_server_config.html">
+            
+                
+                    <a href="../chapter1/00_02_wechat_server_config.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        搭建开发服务器环境
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter1/00_03_become_wechat_developer.html">
+            
+                
+                    <a href="../chapter1/00_03_become_wechat_developer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        校验通过开发者模式
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="chapter2/01_00_handle_message.html">
+            
+                
+                    <a href="../chapter2/01_00_handle_message.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        处理微信服务器消息
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="chapter2/01_01_handle_message_1_receive_send_msg.html">
+            
+                
+                    <a href="../chapter2/01_01_handle_message_1_receive_send_msg.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        简单的例子
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter2/01_02_handle_message_2_pojo.html">
+            
+                
+                    <a href="../chapter2/01_02_handle_message_2_pojo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        定义消息类对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chapter2/01_03_handle_message_3_parse_unparse_xml.html">
+            
+                
+                    <a href="../chapter2/01_03_handle_message_3_parse_unparse_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        解析/封装XML消息
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="chapter3/02_00_menu.html">
+            
+                
+                    <a href="../chapter3/02_00_menu.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        自定义菜单开发
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.1" data-path="chapter3/02_01_menu_1_menu_pojo.html">
+            
+                
+                    <a href="../chapter3/02_01_menu_1_menu_pojo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        定义菜单类POJO对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="chapter3/02_02_menu_2_create_menu.html">
+            
+                
+                    <a href="../chapter3/02_02_menu_2_create_menu.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        创建自定义菜单
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="chapter3/02_03_menu_3_keep_token_valid.html">
+            
+                
+                    <a href="../chapter3/02_03_menu_3_keep_token_valid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        获取access_token并保证长期有效
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="chapter4/03_00_advanced.html">
+            
+                
+                    <a href="../chapter4/03_00_advanced.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        九大高级接口使用
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="chapter4/03_01_advanced1_voice_recognition.html">
+            
+                
+                    <a href="../chapter4/03_01_advanced1_voice_recognition.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        语音接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="chapter4/03_02_advanced2_kefu.html">
+            
+                
+                    <a href="../chapter4/03_02_advanced2_kefu.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        客服接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="chapter4/03_03_advanced3_web_OAuth.html">
+            
+                
+                    <a href="../chapter4/03_03_advanced3_web_OAuth.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        网页授权接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="chapter4/03_04_advanced4_qrcode.html">
+            
+                
+                    <a href="../chapter4/03_04_advanced4_qrcode.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        二维码接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="chapter4/03_05_advanced5_location.html">
+            
+                
+                    <a href="../chapter4/03_05_advanced5_location.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        地理位置接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="chapter4/03_06_advanced6_userinfo.html">
+            
+                
+                    <a href="../chapter4/03_06_advanced6_userinfo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        用户基本信息接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="chapter4/03_07_advanced7_userlist.html">
+            
+                
+                    <a href="../chapter4/03_07_advanced7_userlist.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        用户列表接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="chapter4/03_08_advanced8_usergroup.html">
+            
+                
+                    <a href="../chapter4/03_08_advanced8_usergroup.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        用户分组接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="chapter4/03_09_advanced9_updownload.html">
+            
+                
+                    <a href="../chapter4/03_09_advanced9_updownload.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        上传下载接口
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                本书使用 GitBook 发布
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="目录"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="搜索"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="字体设置"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">衬线体</button>
+        <button type="button" data-font="1" class="button">无衬线体</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">白色</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">棕褐色</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">夜间</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="分享"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    分享到 Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    分享到 Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    分享到 Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    分享到 Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    分享到 Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >wechat Notebook</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="%E8%87%AA%E5%AE%9A%E4%B9%89%E8%8F%9C%E5%8D%95%E5%BC%80%E5%8F%91-%E5%AE%9A%E4%B9%89%E8%8F%9C%E5%8D%95%E7%B1%BBpojo%E5%AF%B9%E8%B1%A1">&#x81EA;&#x5B9A;&#x4E49;&#x83DC;&#x5355;&#x5F00;&#x53D1; - &#x5B9A;&#x4E49;&#x83DC;&#x5355;&#x7C7B;POJO&#x5BF9;&#x8C61;</h1>
+<p>&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x4ECB;&#x7ECD;&#x4E86;&#x5982;&#x4F55;&#x5904;&#x7406;&#x5FAE;&#x4FE1;&#x670D;&#x52A1;&#x5668;&#x8F6C;&#x53D1;&#x7684;&#x6D88;&#x606F;&#xFF0C;&#x4ECA;&#x5929;&#x6211;&#x4EEC;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x901A;&#x8FC7;&#x5F00;&#x53D1;&#x63A5;&#x53E3;&#x8FDB;&#x884C;&#x81EA;&#x5B9A;&#x4E49;&#x83DC;&#x5355;&#x7684;&#x5F00;&#x53D1;&#x3002;</p>
+<p>&#x4E0E;&#x5904;&#x7406;&#x5FAE;&#x4FE1;&#x670D;&#x52A1;&#x5668;&#x6D88;&#x606F;&#x76F8;&#x540C;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x9700;&#x8981;&#x5C06;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x7684;&#x83DC;&#x5355;&#x62BD;&#x8C61;&#x5316;&#x6210;POJO&#x5BF9;&#x8C61;&#xFF0C;&#x4EE5;&#x65B9;&#x4FBF;&#x6211;&#x4EEC;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x81EA;&#x5B9A;&#x4E49;&#x83DC;&#x5355;&#x4E2D;&#x7684;&#x83DC;&#x5355;&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;3&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x7C7B;&#x578B;&#xFF1A;</p>
+<ul>
+<li>&#x6CA1;&#x6709;&#x4E8C;&#x7EA7;&#x83DC;&#x5355;&#x7684;&#x4E00;&#x7EA7;&#x83DC;&#x5355;&#x3001;&#x4E8C;&#x7EA7;&#x83DC;&#x5355;&#xFF08;CommonButton&#xFF09;</li>
+<li>&#x6709;&#x4E8C;&#x7EA7;&#x83DC;&#x5355;&#x7684;&#x4E00;&#x7EA7;&#x83DC;&#x5355;&#xFF08;ComplexButton&#xFF09;</li>
+<li>&#x70B9;&#x51FB;&#x8DF3;&#x8F6C;&#x5230;&#x9875;&#x9762;&#x7684;&#x83DC;&#x5355;&#xFF08;ViewButton&#xFF09;</li>
+</ul>
+<p>&#x6309;&#x7167;&#x4E0A;&#x9762;&#x7684;&#x5206;&#x6790;&#xFF0C;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x51FA;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7684;POJO&#x7C7B;&#x5BF9;&#x8C61;</p>
+<h2 id="%E8%8F%9C%E5%8D%95%E7%B1%BB%E5%AF%B9%E8%B1%A1">&#x83DC;&#x5355;&#x7C7B;&#x5BF9;&#x8C61;</h2>
+<p>&#x57FA;&#x672C;&#x6309;&#x94AE;&#x5BF9;&#x8C61;Button&#x7C7B;&#xFF0C;&#x6240;&#x6709;&#x5176;&#x4ED6;&#x6309;&#x94AE;&#x7C7B;&#x90FD;&#x5C06;&#x7EE7;&#x627F;&#x6B64;&#x7C7B;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo.menu;
+
+<span class="hljs-javadoc">/**
+ * &#x6309;&#x94AE;&#x7684;&#x57FA;&#x7C7B;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015-09-29
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Button</span> </span>{
+    <span class="hljs-keyword">private</span> String name;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> name;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setName</span><span class="hljs-params">(String name)</span> </span>{
+        <span class="hljs-keyword">this</span>.name = name;
+    }
+}
+</code></pre>
+<p>&#x666E;&#x901A;&#x6309;&#x94AE;&#x7C7B;CommonButton</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo.menu;
+
+<span class="hljs-javadoc">/**
+ * &#x666E;&#x901A;&#x6309;&#x94AE;&#xFF08;&#x5B50;&#x6309;&#x94AE;&#xFF09;
+ * &#x6CA1;&#x6709;&#x5B50;&#x83DC;&#x5355;&#x7684;&#x83DC;&#x5355;&#x9879;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x662F;&#x4E8C;&#x7EA7;&#x83DC;&#x5355;&#x9879;&#xFF0C;&#x4E5F;&#x6709;&#x53EF;&#x80FD;&#x662F;&#x4E0D;&#x542B;&#x4E8C;&#x7EA7;&#x83DC;&#x5355;&#x7684;&#x4E00;&#x7EA7;&#x83DC;&#x5355;&#x3002;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015-09-29
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CommonButton</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Button</span> </span>{
+
+    <span class="hljs-keyword">private</span> String type;
+
+    <span class="hljs-keyword">private</span> String key;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getType</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> type;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setType</span><span class="hljs-params">(String type)</span> </span>{
+        <span class="hljs-keyword">this</span>.type = type;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getKey</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> key;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setKey</span><span class="hljs-params">(String key)</span> </span>{
+        <span class="hljs-keyword">this</span>.key = key;
+    }
+}
+</code></pre>
+<p>&#x590D;&#x6742;&#x6309;&#x94AE;&#x7C7B;ComplexButton</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo.menu;
+
+<span class="hljs-javadoc">/**
+ * &#x590D;&#x6742;&#x6309;&#x94AE;&#xFF08;&#x7236;&#x6309;&#x94AE;&#xFF09;
+ * &#x5305;&#x542B;&#x6709;&#x4E8C;&#x7EA7;&#x83DC;&#x5355;&#x9879;&#x7684;&#x4E00;&#x7EA7;&#x83DC;&#x5355;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015-09-29
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ComplexButton</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Button</span> </span>{
+    <span class="hljs-keyword">private</span> Button[] sub_button;
+
+    <span class="hljs-keyword">public</span> Button[] getSub_button() {
+        <span class="hljs-keyword">return</span> sub_button;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setSub_button</span><span class="hljs-params">(Button[] sub_button)</span> </span>{
+        <span class="hljs-keyword">this</span>.sub_button = sub_button;
+    }
+}
+</code></pre>
+<p>ViewButton&#x7C7B;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo.menu;
+
+<span class="hljs-javadoc">/**
+ * view&#x7C7B;&#x578B;&#x7684;&#x83DC;&#x5355;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015.09.30
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ViewButton</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Button</span> </span>{
+    <span class="hljs-keyword">private</span> String type;
+    <span class="hljs-keyword">private</span> String url;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getType</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> type;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setType</span><span class="hljs-params">(String type)</span> </span>{
+        <span class="hljs-keyword">this</span>.type = type;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getUrl</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> url;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setUrl</span><span class="hljs-params">(String url)</span> </span>{
+        <span class="hljs-keyword">this</span>.url = url;
+    }
+}
+</code></pre>
+<p>&#x6700;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x6839;&#x636E;&#x5FAE;&#x4FE1;&#x5BF9;&#x4E8E;&#x4E00;&#x7EA7;&#x548C;&#x4E8C;&#x7EA7;&#x83DC;&#x5355;&#x7684;&#x8981;&#x6C42;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;Menu&#x7C7B;&#xFF0C;&#x4EE3;&#x8868;&#x6574;&#x4E2A;&#x83DC;&#x5355;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo.menu;
+
+<span class="hljs-javadoc">/**
+ * &#x83DC;&#x5355;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015-09-29
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Menu</span> </span>{
+    <span class="hljs-keyword">private</span> Button[] button;
+
+    <span class="hljs-keyword">public</span> Button[] getButton() {
+        <span class="hljs-keyword">return</span> button;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setButton</span><span class="hljs-params">(Button[] button)</span> </span>{
+        <span class="hljs-keyword">this</span>.button = button;
+    }
+}
+</code></pre>
+<p>&#x5230;&#x8FD9;&#x91CC;&#x83DC;&#x5355;POJO&#x5BF9;&#x8C61;&#x4ECB;&#x7ECD;&#x5B8C;&#x6BD5;&#x3002;&#x4E0B;&#x4E00;&#x8282;&#x6211;&#x4EEC;&#x5C06;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x5411;&#x300E;&#x83DC;&#x5355;&#x521B;&#x5EFA;&#x63A5;&#x53E3;&#x300F;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x4EE5;&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x83DC;&#x5355;&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chapter3/02_00_menu.html" class="navigation navigation-prev " aria-label="Previous page: 自定义菜单开发"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chapter3/02_02_menu_2_create_menu.html" class="navigation navigation-next " aria-label="Next page: 创建自定义菜单"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

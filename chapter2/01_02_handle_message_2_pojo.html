@@ -1,0 +1,1360 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>定义消息类对象 | wechat Notebook</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.1.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../chapter2/01_03_handle_message_3_parse_unparse_xml.html" />
+    
+    
+    <link rel="prev" href="../chapter2/01_01_handle_message_1_receive_send_msg.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="2.2" data-basepath=".." data-revision="Thu Nov 05 2015 21:41:53 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="输入并搜索" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        微信公众号开发概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter1/00_00_wechat.html">
+            
+                
+                    <a href="../chapter1/00_00_wechat.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        微信公众号开发介绍
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="chapter1/00_01_wechat_intro.html">
+            
+                
+                    <a href="../chapter1/00_01_wechat_intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        微信公众号介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1/00_02_wechat_server_config.html">
+            
+                
+                    <a href="../chapter1/00_02_wechat_server_config.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        搭建开发服务器环境
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter1/00_03_become_wechat_developer.html">
+            
+                
+                    <a href="../chapter1/00_03_become_wechat_developer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        校验通过开发者模式
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="chapter2/01_00_handle_message.html">
+            
+                
+                    <a href="../chapter2/01_00_handle_message.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        处理微信服务器消息
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="chapter2/01_01_handle_message_1_receive_send_msg.html">
+            
+                
+                    <a href="../chapter2/01_01_handle_message_1_receive_send_msg.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        简单的例子
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="chapter2/01_02_handle_message_2_pojo.html">
+            
+                
+                    <a href="../chapter2/01_02_handle_message_2_pojo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        定义消息类对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chapter2/01_03_handle_message_3_parse_unparse_xml.html">
+            
+                
+                    <a href="../chapter2/01_03_handle_message_3_parse_unparse_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        解析/封装XML消息
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="chapter3/02_00_menu.html">
+            
+                
+                    <a href="../chapter3/02_00_menu.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        自定义菜单开发
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="chapter3/02_01_menu_1_menu_pojo.html">
+            
+                
+                    <a href="../chapter3/02_01_menu_1_menu_pojo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        定义菜单类POJO对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="chapter3/02_02_menu_2_create_menu.html">
+            
+                
+                    <a href="../chapter3/02_02_menu_2_create_menu.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        创建自定义菜单
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="chapter3/02_03_menu_3_keep_token_valid.html">
+            
+                
+                    <a href="../chapter3/02_03_menu_3_keep_token_valid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        获取access_token并保证长期有效
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="chapter4/03_00_advanced.html">
+            
+                
+                    <a href="../chapter4/03_00_advanced.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        九大高级接口使用
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="chapter4/03_01_advanced1_voice_recognition.html">
+            
+                
+                    <a href="../chapter4/03_01_advanced1_voice_recognition.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        语音接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="chapter4/03_02_advanced2_kefu.html">
+            
+                
+                    <a href="../chapter4/03_02_advanced2_kefu.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        客服接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="chapter4/03_03_advanced3_web_OAuth.html">
+            
+                
+                    <a href="../chapter4/03_03_advanced3_web_OAuth.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        网页授权接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="chapter4/03_04_advanced4_qrcode.html">
+            
+                
+                    <a href="../chapter4/03_04_advanced4_qrcode.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        二维码接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="chapter4/03_05_advanced5_location.html">
+            
+                
+                    <a href="../chapter4/03_05_advanced5_location.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        地理位置接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="chapter4/03_06_advanced6_userinfo.html">
+            
+                
+                    <a href="../chapter4/03_06_advanced6_userinfo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        用户基本信息接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="chapter4/03_07_advanced7_userlist.html">
+            
+                
+                    <a href="../chapter4/03_07_advanced7_userlist.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        用户列表接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="chapter4/03_08_advanced8_usergroup.html">
+            
+                
+                    <a href="../chapter4/03_08_advanced8_usergroup.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        用户分组接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="chapter4/03_09_advanced9_updownload.html">
+            
+                
+                    <a href="../chapter4/03_09_advanced9_updownload.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        上传下载接口
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                本书使用 GitBook 发布
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="目录"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="搜索"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="字体设置"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">衬线体</button>
+        <button type="button" data-font="1" class="button">无衬线体</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">白色</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">棕褐色</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">夜间</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="分享"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    分享到 Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    分享到 Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    分享到 Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    分享到 Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    分享到 Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >wechat Notebook</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="%E5%A4%84%E7%90%86%E5%BE%AE%E4%BF%A1%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B6%88%E6%81%AF-%E5%AE%9A%E4%B9%89%E6%B6%88%E6%81%AF%E7%B1%BB%E5%AF%B9%E8%B1%A1">&#x5904;&#x7406;&#x5FAE;&#x4FE1;&#x670D;&#x52A1;&#x5668;&#x6D88;&#x606F; - &#x5B9A;&#x4E49;&#x6D88;&#x606F;&#x7C7B;&#x5BF9;&#x8C61;</h1>
+<p>&#x6211;&#x4EEC;&#x4E0E;&#x5FAE;&#x4FE1;&#x670D;&#x52A1;&#x5668;&#x7684;&#x4EA4;&#x4E92;&#x4E3B;&#x8981;&#x7531;&#x4E24;&#x4E2A;&#x5730;&#x65B9;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;<a href="http://mp.weixin.qq.com/wiki/10/79502792eef98d6e0c6e1739da387346.html" target="_blank">&#x63A5;&#x6536;&#x6D88;&#x606F;</a>&#xFF0C;&#x4E00;&#x4E2A;&#x662F;<a href="http://mp.weixin.qq.com/wiki/14/89b871b5466b19b3efa4ada8e577d45e.html" target="_blank">&#x56DE;&#x590D;&#x6D88;&#x606F;</a>&#x3002;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x64CD;&#x4F5C;&#xFF0C;&#x6211;&#x4EEC;&#x6839;&#x636E;&#x5FAE;&#x4FE1;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x5C06;&#x5176;&#x62BD;&#x8C61;&#x4E3A;POJO&#x5BF9;&#x8C61;&#xFF0C;&#x65B9;&#x4FBF;&#x6211;&#x4EEC;&#x7684;&#x5F00;&#x53D1;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x628A;POJO&#x5BF9;&#x8C61;&#x5206;&#x4E3A;&#x4E24;&#x7C7B;&#xFF0C;&#x4E00;&#x7C7B;&#x662F;&#x8BF7;&#x6C42;&#x7C7B;&#x6D88;&#x606F;&#x5BF9;&#x8C61;&#xFF0C;&#x5BF9;&#x5E94;&#x6211;&#x4EEC;&#x63A5;&#x6536;&#x5FAE;&#x4FE1;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6D88;&#x606F;&#x3002;&#x53E6;&#x4E00;&#x7C7B;&#x662F;&#x54CD;&#x5E94;&#x7C7B;&#x6D88;&#x606F;&#x5BF9;&#x8C61;&#xFF0C;&#x5BF9;&#x5E94;&#x6211;&#x4EEC;&#x54CD;&#x5E94;&#x5FAE;&#x4FE1;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6D88;&#x606F;&#x3002;</p>
+<h2 id="%E8%AF%B7%E6%B1%82%E7%B1%BB%E6%B6%88%E6%81%AF%E5%AF%B9%E8%B1%A1">&#x8BF7;&#x6C42;&#x7C7B;&#x6D88;&#x606F;&#x5BF9;&#x8C61;</h2>
+<p>&#x6211;&#x4EEC;&#x63A5;&#x6536;&#x5FAE;&#x4FE1;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6D88;&#x606F;&#x4E00;&#x5171;&#x6709;7&#x79CD;&#x7C7B;&#x578B;&#xFF0C;&#x5206;&#x522B;&#x662F;&#xFF1A;</p>
+<ul>
+<li>&#x6587;&#x672C;&#x6D88;&#x606F;</li>
+<li>&#x56FE;&#x7247;&#x6D88;&#x606F;</li>
+<li>&#x8BED;&#x97F3;&#x6D88;&#x606F;</li>
+<li>&#x89C6;&#x9891;&#x6D88;&#x606F;</li>
+<li>&#x5C0F;&#x89C6;&#x9891;&#x6D88;&#x606F;</li>
+<li>&#x5730;&#x7406;&#x4F4D;&#x7F6E;&#x6D88;&#x606F;</li>
+<li>&#x94FE;&#x63A5;&#x6D88;&#x606F;</li>
+</ul>
+<p>&#x4E0A;&#x9762;7&#x79CD;&#x6D88;&#x606F;&#x90FD;&#x7531;&#x4E00;&#x4E9B;&#x5171;&#x540C;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x6211;&#x4EEC;&#x628A;&#x8FD9;&#x4E9B;&#x5B57;&#x6BB5;&#x63D0;&#x53D6;&#x51FA;&#x6765;&#x5C01;&#x88C5;&#x6210;&#x4E00;&#x4E2A;&#x57FA;&#x7C7B;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo.message.req;
+
+<span class="hljs-javadoc">/**
+ * &#x8BF7;&#x6C42;&#x7C7B;&#xFF0C;&#x6D88;&#x606F;&#x57FA;&#x7C7B;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015.10.03
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BaseMessage</span> </span>{
+    <span class="hljs-comment">// &#x5F00;&#x53D1;&#x8005;&#x5FAE;&#x4FE1;&#x53F7;</span>
+    <span class="hljs-keyword">private</span> String toUserName;
+    <span class="hljs-comment">// &#x53D1;&#x9001;&#x65B9;&#x5E10;&#x53F7;&#xFF08;&#x4E00;&#x4E2A;OpenID&#xFF09;</span>
+    <span class="hljs-keyword">private</span> String fromUserName;
+    <span class="hljs-comment">// &#x6D88;&#x606F;&#x521B;&#x5EFA;&#x65F6;&#x95F4; &#xFF08;&#x6574;&#x578B;&#xFF09;</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">long</span> createTime;
+    <span class="hljs-comment">// &#x6D88;&#x606F;&#x7C7B;&#x578B;&#xFF08;text/image/location/link&#xFF09;</span>
+    <span class="hljs-keyword">private</span> String msgType;
+    <span class="hljs-comment">// &#x6D88;&#x606F;id&#xFF0C;64&#x4F4D;&#x6574;&#x578B;</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">long</span> msgId;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">gettoUserName</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> toUserName;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">settoUserName</span><span class="hljs-params">(String toUserName)</span> </span>{
+        toUserName = toUserName;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getfromUserName</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> fromUserName;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setfromUserName</span><span class="hljs-params">(String fromUserName)</span> </span>{
+        fromUserName = fromUserName;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">long</span> <span class="hljs-title">getcreateTime</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> createTime;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setcreateTime</span><span class="hljs-params">(<span class="hljs-keyword">long</span> createTime)</span> </span>{
+        createTime = createTime;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getmsgType</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> msgType;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setmsgType</span><span class="hljs-params">(String msgType)</span> </span>{
+        msgType = msgType;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">long</span> <span class="hljs-title">getmsgId</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> msgId;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setmsgId</span><span class="hljs-params">(<span class="hljs-keyword">long</span> msgId)</span> </span>{
+        msgId = msgId;
+    }
+}
+</code></pre>
+<h3 id="%E6%96%87%E6%9C%AC%E6%B6%88%E6%81%AF">&#x6587;&#x672C;&#x6D88;&#x606F;</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo.message.req;
+
+<span class="hljs-javadoc">/**
+ * &#x8BF7;&#x6C42;&#x7C7B;&#xFF0C;&#x6587;&#x672C;&#x6D88;&#x606F;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015.10.03
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TextMessage</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseMessage</span> </span>{
+    <span class="hljs-comment">// &#x6D88;&#x606F;&#x5185;&#x5BB9;</span>
+    <span class="hljs-keyword">private</span> String content;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getContent</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> content;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setContent</span><span class="hljs-params">(String content)</span> </span>{
+        content = content;
+    }
+}
+</code></pre>
+<h3 id="%E5%9B%BE%E7%89%87%E6%B6%88%E6%81%AF">&#x56FE;&#x7247;&#x6D88;&#x606F;</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo.message.req;
+
+<span class="hljs-javadoc">/**
+ * &#x8BF7;&#x6C42;&#x7C7B;&#xFF0C;&#x56FE;&#x7247;&#x6D88;&#x606F;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015.10.03
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ImageMessage</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseMessage</span> </span>{
+    <span class="hljs-comment">// &#x56FE;&#x7247;&#x94FE;&#x63A5;</span>
+    <span class="hljs-keyword">private</span> String picUrl;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getPicUrl</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> picUrl;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setPicUrl</span><span class="hljs-params">(String picUrl)</span> </span>{
+        picUrl = picUrl;
+    }
+}
+</code></pre>
+<h3 id="%E8%AF%AD%E9%9F%B3%E6%B6%88%E6%81%AF">&#x8BED;&#x97F3;&#x6D88;&#x606F;</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo.message.req;
+
+<span class="hljs-javadoc">/**
+ * &#x8BF7;&#x6C42;&#x7C7B;&#xFF0C;&#x8BED;&#x97F3;&#x6D88;&#x606F;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015.10.03
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">VoiceMessage</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseMessage</span> </span>{
+    <span class="hljs-comment">// &#x5A92;&#x4F53;ID</span>
+    <span class="hljs-keyword">private</span> String mediaId;
+    <span class="hljs-comment">// &#x8BED;&#x97F3;&#x683C;&#x5F0F;</span>
+    <span class="hljs-keyword">private</span> String format;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getmediaId</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> mediaId;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setmediaId</span><span class="hljs-params">(String mediaId)</span> </span>{
+        mediaId = mediaId;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getformat</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> format;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setformat</span><span class="hljs-params">(String format)</span> </span>{
+        format = format;
+    }
+}
+</code></pre>
+<h3 id="%E8%A7%86%E9%A2%91%E6%B6%88%E6%81%AF">&#x89C6;&#x9891;&#x6D88;&#x606F;</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo.message.req;
+
+<span class="hljs-javadoc">/**
+ * &#x8BF7;&#x6C42;&#x7C7B;&#xFF0C;&#x89C6;&#x9891;&#x6D88;&#x606F;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015.10.03
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">VideoMessage</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseMessage</span></span>{
+    <span class="hljs-comment">//&#x89C6;&#x9891;&#x6D88;&#x606F;&#x5A92;&#x4F53;id&#xFF0C;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x591A;&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#x4E0B;&#x8F7D;&#x63A5;&#x53E3;&#x62C9;&#x53D6;&#x6570;&#x636E;</span>
+    <span class="hljs-keyword">private</span> String mediaId;
+    <span class="hljs-comment">//&#x89C6;&#x9891;&#x6D88;&#x606F;&#x7F29;&#x7565;&#x56FE;&#x7684;&#x5A92;&#x4F53;id&#xFF0C;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x591A;&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#x4E0B;&#x8F7D;&#x63A5;&#x53E3;&#x62C9;&#x53D6;&#x6570;&#x636E;</span>
+    <span class="hljs-keyword">private</span> String thumbMediaId;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getMediaId</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> mediaId;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setMediaId</span><span class="hljs-params">(String mediaId)</span> </span>{
+        <span class="hljs-keyword">this</span>.mediaId = mediaId;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getThumbMediaId</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> thumbMediaId;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setThumbMediaId</span><span class="hljs-params">(String thumbMediaId)</span> </span>{
+        <span class="hljs-keyword">this</span>.thumbMediaId = thumbMediaId;
+    }
+}
+</code></pre>
+<h3 id="%E5%B0%8F%E8%A7%86%E9%A2%91%E6%B6%88%E6%81%AF">&#x5C0F;&#x89C6;&#x9891;&#x6D88;&#x606F;</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo.message.req;
+
+<span class="hljs-javadoc">/**
+ * &#x8BF7;&#x6C42;&#x7C7B;&#xFF0C;&#x5C0F;&#x89C6;&#x9891;&#x6D88;&#x606F;&#xFF08;&#x4E0E;&#x89C6;&#x9891;&#x6D88;&#x606F;&#x4E00;&#x6837;&#xFF09;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015.10.03
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ShortVideoMessage</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">VideoMessage</span></span>{
+    <span class="hljs-comment">//&#x5C5E;&#x6027;&#x4E0E;VideoMessage&#xFF08;&#x89C6;&#x9891;&#x6D88;&#x606F;&#xFF09;&#x5B8C;&#x5168;&#x4E00;&#x6837;</span>
+}
+</code></pre>
+<h3 id="%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE%E6%B6%88%E6%81%AF">&#x5730;&#x7406;&#x4F4D;&#x7F6E;&#x6D88;&#x606F;</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo.message.req;
+
+<span class="hljs-javadoc">/**
+ * &#x8BF7;&#x6C42;&#x7C7B;&#xFF0C;&#x4F4D;&#x7F6E;&#x6D88;&#x606F;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015.10.03
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LocationMessage</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseMessage</span> </span>{
+    <span class="hljs-comment">// &#x5730;&#x7406;&#x4F4D;&#x7F6E;&#x7EF4;&#x5EA6;</span>
+    <span class="hljs-keyword">private</span> String Location_X;
+    <span class="hljs-comment">// &#x5730;&#x7406;&#x4F4D;&#x7F6E;&#x7ECF;&#x5EA6;</span>
+    <span class="hljs-keyword">private</span> String Location_Y;
+    <span class="hljs-comment">// &#x5730;&#x56FE;&#x7F29;&#x653E;&#x5927;&#x5C0F;</span>
+    <span class="hljs-keyword">private</span> String Scale;
+    <span class="hljs-comment">// &#x5730;&#x7406;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;</span>
+    <span class="hljs-keyword">private</span> String Label;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getLocation_X</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> Location_X;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setLocation_X</span><span class="hljs-params">(String location_X)</span> </span>{
+        Location_X = location_X;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getLocation_Y</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> Location_Y;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setLocation_Y</span><span class="hljs-params">(String location_Y)</span> </span>{
+        Location_Y = location_Y;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getScale</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> Scale;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setScale</span><span class="hljs-params">(String scale)</span> </span>{
+        Scale = scale;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getLabel</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> Label;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setLabel</span><span class="hljs-params">(String label)</span> </span>{
+        Label = label;
+    }
+}
+</code></pre>
+<h3 id="%E9%93%BE%E6%8E%A5%E6%B6%88%E6%81%AF">&#x94FE;&#x63A5;&#x6D88;&#x606F;</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo.message.req;
+
+<span class="hljs-javadoc">/**
+ * &#x8BF7;&#x6C42;&#x7C7B;&#xFF0C;&#x94FE;&#x63A5;&#x6D88;&#x606F;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015.10.03
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LinkMessage</span>  <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseMessage</span> </span>{
+    <span class="hljs-comment">// &#x6D88;&#x606F;&#x6807;&#x9898;</span>
+    <span class="hljs-keyword">private</span> String Title;
+    <span class="hljs-comment">// &#x6D88;&#x606F;&#x63CF;&#x8FF0;</span>
+    <span class="hljs-keyword">private</span> String Description;
+    <span class="hljs-comment">// &#x6D88;&#x606F;&#x94FE;&#x63A5;</span>
+    <span class="hljs-keyword">private</span> String Url;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getTitle</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> Title;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setTitle</span><span class="hljs-params">(String title)</span> </span>{
+        Title = title;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getDescription</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> Description;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setDescription</span><span class="hljs-params">(String description)</span> </span>{
+        Description = description;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getUrl</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> Url;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setUrl</span><span class="hljs-params">(String url)</span> </span>{
+        Url = url;
+    }
+}
+</code></pre>
+<p><a href="http://mp.weixin.qq.com/wiki/10/79502792eef98d6e0c6e1739da387346.html" target="_blank">&#x5B98;&#x7F51;&#x6587;&#x6863;-&#x63A5;&#x6536;&#x6D88;&#x606F;-&#x63A5;&#x6536;&#x666E;&#x901A;&#x6D88;&#x606F;</a></p>
+<h2 id="%E5%93%8D%E5%BA%94%E7%B1%BB%E6%B6%88%E6%81%AF%E5%AF%B9%E8%B1%A1">&#x54CD;&#x5E94;&#x7C7B;&#x6D88;&#x606F;&#x5BF9;&#x8C61;</h2>
+<p>&#x56DE;&#x590D;&#x7ED9;&#x5FAE;&#x4FE1;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6D88;&#x606F;&#x6709;6&#x79CD;&#x7C7B;&#x578B;&#xFF0C;&#x5206;&#x522B;&#x662F;&#xFF1A;</p>
+<ul>
+<li>&#x6587;&#x672C;&#x6D88;&#x606F;</li>
+<li>&#x56FE;&#x7247;&#x6D88;&#x606F;</li>
+<li>&#x8BED;&#x97F3;&#x6D88;&#x606F;</li>
+<li>&#x89C6;&#x9891;&#x6D88;&#x606F;</li>
+<li>&#x97F3;&#x4E50;&#x6D88;&#x606F;</li>
+<li>&#x56FE;&#x6587;&#x6D88;&#x606F;</li>
+</ul>
+<p>&#x540C;&#x6837;&#x5730;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5171;&#x6709;&#x5B57;&#x6BB5;&#x62BD;&#x53D6;&#x51FA;&#x6765;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x57FA;&#x7C7B;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo.message.resp;
+<span class="hljs-javadoc">/**
+ * &#x54CD;&#x5E94;&#x7C7B;&#xFF0C;&#x57FA;&#x7C7B;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015.10.03
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BaseMessage</span> </span>{
+    <span class="hljs-comment">//&#x63A5;&#x6536;&#x65B9;&#x5E10;&#x53F7;&#xFF08;&#x6536;&#x5230;&#x7684;OpenID&#xFF09;</span>
+    <span class="hljs-keyword">private</span> String ToUserName;
+    <span class="hljs-comment">//&#x5F00;&#x53D1;&#x8005;&#x5FAE;&#x4FE1;&#x53F7;</span>
+    <span class="hljs-keyword">private</span> String FromUserName;
+    <span class="hljs-comment">//&#x6D88;&#x606F;&#x521B;&#x5EFA;&#x65F6;&#x95F4; &#xFF08;&#x6574;&#x578B;&#xFF09;</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">long</span> CreateTime;
+    <span class="hljs-comment">//&#x6D88;&#x606F;&#x7C7B;&#x578B;&#xFF08;text/voice/video/music/news&#xFF09;</span>
+    <span class="hljs-keyword">private</span> String MsgType;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getToUserName</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> ToUserName;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setToUserName</span><span class="hljs-params">(String toUserName)</span> </span>{
+        ToUserName = toUserName;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getFromUserName</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> FromUserName;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setFromUserName</span><span class="hljs-params">(String fromUserName)</span> </span>{
+        FromUserName = fromUserName;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">long</span> <span class="hljs-title">getCreateTime</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> CreateTime;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setCreateTime</span><span class="hljs-params">(<span class="hljs-keyword">long</span> createTime)</span> </span>{
+        CreateTime = createTime;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getMsgType</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> MsgType;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setMsgType</span><span class="hljs-params">(String msgType)</span> </span>{
+        MsgType = msgType;
+    }
+}
+</code></pre>
+<h3 id="%E6%96%87%E6%9C%AC%E6%B6%88%E6%81%AF">&#x6587;&#x672C;&#x6D88;&#x606F;</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo.message.resp;
+
+<span class="hljs-javadoc">/**
+ * &#x8BF7;&#x6C42;&#x7C7B;&#xFF0C;&#x6587;&#x672C;&#x6D88;&#x606F;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015.10.03
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TextMessage</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseMessage</span> </span>{
+    <span class="hljs-comment">// &#x6D88;&#x606F;&#x5185;&#x5BB9;</span>
+    <span class="hljs-keyword">private</span> String Content;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getContent</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> Content;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setContent</span><span class="hljs-params">(String content)</span> </span>{
+        Content = content;
+    }
+}
+</code></pre>
+<h3 id="%E5%9B%BE%E7%89%87%E6%B6%88%E6%81%AF">&#x56FE;&#x7247;&#x6D88;&#x606F;</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo.message.resp;
+
+<span class="hljs-javadoc">/**
+ * &#x54CD;&#x5E94;&#x7C7B;&#xFF0C;&#x56FE;&#x7247;&#x6D88;&#x606F;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015.10.03
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ImageMessage</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseMessage</span></span>{
+
+    <span class="hljs-keyword">private</span> Image Image;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Image <span class="hljs-title">getImage</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> Image;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setImage</span><span class="hljs-params">(Image image)</span> </span>{
+        Image = image;
+    }
+}
+</code></pre>
+<p>Image&#x7C7B;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>package com.chanshuyi.pojo.message.resp;
+
+/**
+ * &#x56FE;&#x7247;&#x7C7B;
+ * @author chenyr
+ * @date 2015.10.04
+ */
+public class Image {
+
+    //&#x901A;&#x8FC7;&#x7D20;&#x6750;&#x7BA1;&#x7406;&#x63A5;&#x53E3;&#x4E0A;&#x4F20;&#x591A;&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#xFF0C;&#x5F97;&#x5230;&#x7684;id&#x3002;
+    private String MediaId;
+
+    public String getMediaId() {
+        return MediaId;
+    }
+
+    public void setMediaId(String mediaId) {
+        MediaId = mediaId;
+    }
+}
+</code></pre><h3 id="%E8%AF%AD%E9%9F%B3%E6%B6%88%E6%81%AF">&#x8BED;&#x97F3;&#x6D88;&#x606F;</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo.message.resp;
+
+<span class="hljs-javadoc">/**
+ * &#x54CD;&#x5E94;&#x7C7B;&#xFF0C;&#x8BED;&#x97F3;&#x6D88;&#x606F;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015.10.03
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">VoiceMessage</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseMessage</span></span>{
+
+    <span class="hljs-keyword">private</span> Voice Voice;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Voice <span class="hljs-title">getVoice</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> Voice;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setVoice</span><span class="hljs-params">(Voice voice)</span> </span>{
+        Voice = voice;
+    }
+}
+</code></pre>
+<p>Voice&#x7C7B;&#x5B9A;&#x4E49;&#xFF1A;</p>
+<pre><code>package com.chanshuyi.pojo.message.resp;
+
+/**
+ * &#x97F3;&#x9891;&#x7C7B;
+ * @author chenyr
+ * @date 2015.10.04
+ */
+public class Voice {
+
+    //&#x901A;&#x8FC7;&#x7D20;&#x6750;&#x7BA1;&#x7406;&#x63A5;&#x53E3;&#x4E0A;&#x4F20;&#x591A;&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#xFF0C;&#x5F97;&#x5230;&#x7684;id
+    private String MediaId;
+
+    public String getMediaId() {
+        return MediaId;
+    }
+
+    public void setMediaId(String mediaId) {
+        MediaId = mediaId;
+    }
+}
+</code></pre><h3 id="%E8%A7%86%E9%A2%91%E6%B6%88%E6%81%AF">&#x89C6;&#x9891;&#x6D88;&#x606F;</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo.message.resp;
+
+<span class="hljs-javadoc">/**
+ * &#x54CD;&#x5E94;&#x7C7B;&#xFF0C;&#x89C6;&#x9891;&#x6D88;&#x606F;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015.10.03
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">VideoMessage</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseMessage</span></span>{
+
+    <span class="hljs-keyword">private</span> Video Video;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Video <span class="hljs-title">getVideo</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> Video;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setVideo</span><span class="hljs-params">(Video video)</span> </span>{
+        Video = video;
+    }
+}
+</code></pre>
+<p>Video&#x7C7B;&#x5B9A;&#x4E49;&#xFF1A;</p>
+<pre><code>package com.chanshuyi.pojo.message.resp;
+
+/**
+ * &#x89C6;&#x9891;&#x7C7B;
+ * @author chenyr
+ * @date 2015.10.04
+ */
+public class Video {
+
+    //&#x901A;&#x8FC7;&#x7D20;&#x6750;&#x7BA1;&#x7406;&#x63A5;&#x53E3;&#x4E0A;&#x4F20;&#x591A;&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#xFF0C;&#x5F97;&#x5230;&#x7684;id
+    private String MediaId;
+    //&#x89C6;&#x9891;&#x6D88;&#x606F;&#x7684;&#x6807;&#x9898;
+    private String Title;
+    //&#x89C6;&#x9891;&#x6D88;&#x606F;&#x7684;&#x63CF;&#x8FF0;
+    private String Description;
+
+    public String getMediaId() {
+        return MediaId;
+    }
+
+    public void setMediaId(String mediaId) {
+        MediaId = mediaId;
+    }
+
+    public String getTitle() {
+        return Title;
+    }
+
+    public void setTitle(String title) {
+        Title = title;
+    }
+
+    public String getDescription() {
+        return Description;
+    }
+
+    public void setDescription(String description) {
+        Description = description;
+    }
+}
+</code></pre><h3 id="%E9%9F%B3%E4%B9%90%E6%B6%88%E6%81%AF">&#x97F3;&#x4E50;&#x6D88;&#x606F;</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo.message.resp;
+
+<span class="hljs-javadoc">/**
+ * &#x54CD;&#x5E94;&#x7C7B;&#xFF0C;&#x97F3;&#x4E50;&#x6D88;&#x606F;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015.10.03
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MusicMessage</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseMessage</span></span>{
+
+    <span class="hljs-keyword">private</span> Music music;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Music <span class="hljs-title">getMusic</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> music;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setMusic</span><span class="hljs-params">(Music music)</span> </span>{
+        <span class="hljs-keyword">this</span>.music = music;
+    }
+}
+</code></pre>
+<p>Music&#x7C7B;&#x7684;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo.message.resp;
+
+<span class="hljs-javadoc">/**
+ * &#x97F3;&#x4E50;&#x7C7B;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015.10.03
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Music</span> </span>{
+    <span class="hljs-comment">// &#x97F3;&#x4E50;&#x540D;&#x79F0;</span>
+    <span class="hljs-keyword">private</span> String Title;
+    <span class="hljs-comment">// &#x97F3;&#x4E50;&#x63CF;&#x8FF0;</span>
+    <span class="hljs-keyword">private</span> String Description;
+    <span class="hljs-comment">// &#x97F3;&#x4E50;&#x94FE;&#x63A5;</span>
+    <span class="hljs-keyword">private</span> String MusicUrl;
+    <span class="hljs-comment">// &#x9AD8;&#x8D28;&#x91CF;&#x97F3;&#x4E50;&#x94FE;&#x63A5;&#xFF0C;WIFI&#x73AF;&#x5883;&#x4F18;&#x5148;&#x4F7F;&#x7528;&#x8BE5;&#x94FE;&#x63A5;&#x64AD;&#x653E;&#x97F3;&#x4E50;</span>
+    <span class="hljs-keyword">private</span> String HQMusicUrl;
+    <span class="hljs-comment">//&#x7F29;&#x7565;&#x56FE;&#x7684;&#x5A92;&#x4F53;id&#xFF0C;&#x901A;&#x8FC7;&#x7D20;&#x6750;&#x7BA1;&#x7406;&#x63A5;&#x53E3;&#x4E0A;&#x4F20;&#x591A;&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#xFF0C;&#x5F97;&#x5230;&#x7684;id</span>
+    <span class="hljs-keyword">private</span> String ThumbMediaId;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getTitle</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> Title;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setTitle</span><span class="hljs-params">(String title)</span> </span>{
+        Title = title;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getDescription</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> Description;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setDescription</span><span class="hljs-params">(String description)</span> </span>{
+        Description = description;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getMusicUrl</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> MusicUrl;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setMusicUrl</span><span class="hljs-params">(String musicUrl)</span> </span>{
+        MusicUrl = musicUrl;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getHQMusicUrl</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> HQMusicUrl;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setHQMusicUrl</span><span class="hljs-params">(String musicUrl)</span> </span>{
+        HQMusicUrl = musicUrl;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getThumbMediaId</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> ThumbMediaId;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setThumbMediaId</span><span class="hljs-params">(String thumbMediaId)</span> </span>{
+        ThumbMediaId = thumbMediaId;
+    }
+}
+</code></pre>
+<h3 id="%E5%9B%BE%E6%96%87%E6%B6%88%E6%81%AF">&#x56FE;&#x6587;&#x6D88;&#x606F;</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo.message.resp;
+
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-javadoc">/**
+ * &#x54CD;&#x5E94;&#x7C7B;&#xFF0C;&#x56FE;&#x6587;&#x6D88;&#x606F;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015.10.03
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NewsMessage</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseMessage</span></span>{
+    <span class="hljs-comment">//&#x56FE;&#x6587;&#x6D88;&#x606F;&#x4E2A;&#x6570;&#xFF0C;&#x9650;&#x5236;&#x4E3A;10&#x6761;&#x4EE5;&#x5185;</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> NewsCount;
+    <span class="hljs-comment">//&#x591A;&#x6761;&#x56FE;&#x6587;&#x6D88;&#x606F;&#x4FE1;&#x606F;&#xFF0C;&#x9ED8;&#x8BA4;&#x7B2C;&#x4E00;&#x4E2A;item&#x4E3A;&#x5927;&#x56FE;,&#x6CE8;&#x610F;&#xFF0C;&#x5982;&#x679C;&#x56FE;&#x6587;&#x6570;&#x8D85;&#x8FC7;10&#xFF0C;&#x5219;&#x5C06;&#x4F1A;&#x65E0;&#x54CD;&#x5E94;</span>
+    <span class="hljs-keyword">private</span> List&lt;News&gt; News;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getNewsCount</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> NewsCount;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setNewsCount</span><span class="hljs-params">(<span class="hljs-keyword">int</span> newsCount)</span> </span>{
+        NewsCount = newsCount;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> List&lt;News&gt; <span class="hljs-title">getNews</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> News;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setNews</span><span class="hljs-params">(List&lt;News&gt; news)</span> </span>{
+        News = news;
+    }
+}
+</code></pre>
+<p>News&#x7C7B;&#x7684;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo.message.resp;
+
+<span class="hljs-javadoc">/**
+ * &#x6587;&#x7AE0;&#x7C7B;
+ *
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015.10.03
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">News</span> </span>{
+
+    <span class="hljs-keyword">private</span> String Title;
+
+    <span class="hljs-keyword">private</span> String Description;
+    <span class="hljs-comment">//&#x56FE;&#x7247;&#x94FE;&#x63A5;&#xFF0C;&#x652F;&#x6301;JPG&#x3001;PNG&#x683C;&#x5F0F;&#xFF0C;&#x8F83;&#x597D;&#x7684;&#x6548;&#x679C;&#x4E3A;&#x5927;&#x56FE;360*200&#xFF0C;&#x5C0F;&#x56FE;200*200</span>
+    <span class="hljs-keyword">private</span> String PicUrl;
+    <span class="hljs-comment">//&#x70B9;&#x51FB;&#x56FE;&#x6587;&#x6D88;&#x606F;&#x8DF3;&#x8F6C;&#x94FE;&#x63A5;</span>
+    <span class="hljs-keyword">private</span> String Url;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getTitle</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> Title;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setTitle</span><span class="hljs-params">(String title)</span> </span>{
+        Title = title;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getDescription</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> Description;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setDescription</span><span class="hljs-params">(String description)</span> </span>{
+        Description = description;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getPicUrl</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> PicUrl;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setPicUrl</span><span class="hljs-params">(String picUrl)</span> </span>{
+        PicUrl = picUrl;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getUrl</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> Url;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setUrl</span><span class="hljs-params">(String url)</span> </span>{
+        Url = url;
+    }
+}
+</code></pre>
+<p><a href="http://mp.weixin.qq.com/wiki/14/89b871b5466b19b3efa4ada8e577d45e.html" target="_blank">&#x5B98;&#x7F51;&#x6587;&#x6863;-&#x53D1;&#x9001;&#x6D88;&#x606F;-&#x88AB;&#x52A8;&#x56DE;&#x590D;&#x6D88;&#x606F;</a></p>
+<h2 id="%E5%8F%91%E9%80%81%E3%80%81%E6%8E%A5%E6%94%B6%E6%B6%88%E6%81%AF%E7%B1%BB%E5%9E%8B">&#x53D1;&#x9001;&#x3001;&#x63A5;&#x6536;&#x6D88;&#x606F;&#x7C7B;&#x578B;</h2>
+<p>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5B58;&#x653E;&#x53D1;&#x9001;&#x3001;&#x63A5;&#x6536;&#x5E38;&#x7528;&#x6D88;&#x606F;&#x7C7B;&#x578B;&#xFF08;MsgType&#xFF09;&#x7684;&#x5E38;&#x91CF;&#x7C7B;&#xFF1A;</p>
+<pre><code>package com.chanshuyi.common;
+
+/**
+ * @author chenyr
+ * @date 2015.10.04
+ */
+public class MessageTypeDef {
+
+    /**
+     * &#x8FD4;&#x56DE;&#x6D88;&#x606F;&#x7C7B;&#x578B;&#xFF1A;&#x6587;&#x672C;
+     */
+    public static final String RESP_MESSAGE_TYPE_TEXT = &quot;text&quot;;
+
+    /**
+     * &#x8BF7;&#x6C42;&#x6D88;&#x606F;&#x7C7B;&#x578B;&#xFF1A;&#x56FE;&#x7247;
+     */
+    public static final String RESP_MESSAGE_TYPE_IMAGE = &quot;image&quot;;
+
+    /**
+     * &#x8BF7;&#x6C42;&#x6D88;&#x606F;&#x7C7B;&#x578B;&#xFF1A;&#x97F3;&#x9891;
+     */
+    public static final String RESP_MESSAGE_TYPE_VOICE = &quot;voice&quot;;
+
+    /**
+     * &#x8BF7;&#x6C42;&#x6D88;&#x606F;&#x7C7B;&#x578B;&#xFF1A;&#x89C6;&#x9891;
+     */
+    public static final String RESP_MESSAGE_TYPE_VIDEO = &quot;video&quot;;
+
+    /**
+     * &#x8FD4;&#x56DE;&#x6D88;&#x606F;&#x7C7B;&#x578B;&#xFF1A;&#x97F3;&#x4E50;
+     */
+    public static final String RESP_MESSAGE_TYPE_MUSIC = &quot;music&quot;;
+
+    /**
+     * &#x8FD4;&#x56DE;&#x6D88;&#x606F;&#x7C7B;&#x578B;&#xFF1A;&#x56FE;&#x6587;
+     */
+    public static final String RESP_MESSAGE_TYPE_NEWS = &quot;news&quot;;
+
+
+    /******************************************************************/
+
+    /**
+     * &#x8BF7;&#x6C42;&#x6D88;&#x606F;&#x7C7B;&#x578B;&#xFF1A;&#x6587;&#x672C;
+     */
+    public static final String REQ_MESSAGE_TYPE_TEXT = &quot;text&quot;;
+
+    /**
+     * &#x8BF7;&#x6C42;&#x6D88;&#x606F;&#x7C7B;&#x578B;&#xFF1A;&#x56FE;&#x7247;
+     */
+    public static final String REQ_MESSAGE_TYPE_IMAGE = &quot;image&quot;;
+
+    /**
+     * &#x8BF7;&#x6C42;&#x6D88;&#x606F;&#x7C7B;&#x578B;&#xFF1A;&#x94FE;&#x63A5;
+     */
+    public static final String REQ_MESSAGE_TYPE_LINK = &quot;link&quot;;
+
+    /**
+     * &#x8BF7;&#x6C42;&#x6D88;&#x606F;&#x7C7B;&#x578B;&#xFF1A;&#x5730;&#x7406;&#x4F4D;&#x7F6E;
+     */
+    public static final String REQ_MESSAGE_TYPE_LOCATION = &quot;location&quot;;
+
+    /**
+     * &#x8BF7;&#x6C42;&#x6D88;&#x606F;&#x7C7B;&#x578B;&#xFF1A;&#x97F3;&#x9891;
+     */
+    public static final String REQ_MESSAGE_TYPE_VOICE = &quot;voice&quot;;
+
+    /**
+     * &#x8BF7;&#x6C42;&#x6D88;&#x606F;&#x7C7B;&#x578B;&#xFF1A;&#x89C6;&#x9891;
+     */
+    public static final String REQ_MESSAGE_TYPE_VIDEO = &quot;video&quot;;
+
+    /**
+     * &#x8BF7;&#x6C42;&#x6D88;&#x606F;&#x7C7B;&#x578B;&#xFF1A;&#x5C0F;&#x89C6;&#x9891;
+     */
+    public static final String REQ_MESSAGE_TYPE_SHORTVIDEO = &quot;shortvideo&quot;;
+
+    /**
+     * &#x8BF7;&#x6C42;&#x6D88;&#x606F;&#x7C7B;&#x578B;&#xFF1A;&#x63A8;&#x9001;
+     */
+    public static final String REQ_MESSAGE_TYPE_EVENT = &quot;event&quot;;
+
+
+    /******************************************************************/
+
+
+    /**
+     * &#x4E8B;&#x4EF6;&#x7C7B;&#x578B;&#xFF1A;subscribe(&#x8BA2;&#x9605;)
+     */
+    public static final String EVENT_TYPE_SUBSCRIBE = &quot;subscribe&quot;;
+
+    /**
+     * &#x4E8B;&#x4EF6;&#x7C7B;&#x578B;&#xFF1A;unsubscribe(&#x53D6;&#x6D88;&#x8BA2;&#x9605;)
+     */
+    public static final String EVENT_TYPE_UNSUBSCRIBE = &quot;unsubscribe&quot;;
+
+    /**
+     * &#x4E8B;&#x4EF6;&#x7C7B;&#x578B;&#xFF1A;CLICK(&#x81EA;&#x5B9A;&#x4E49;&#x83DC;&#x5355;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;)
+     */
+    public static final String EVENT_TYPE_CLICK = &quot;CLICK&quot;;
+}
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chapter2/01_01_handle_message_1_receive_send_msg.html" class="navigation navigation-prev " aria-label="Previous page: 简单的例子"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chapter2/01_03_handle_message_3_parse_unparse_xml.html" class="navigation navigation-next " aria-label="Next page: 解析/封装XML消息"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

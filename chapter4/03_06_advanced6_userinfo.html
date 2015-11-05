@@ -1,0 +1,775 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>用户基本信息接口 | wechat Notebook</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.1.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../chapter4/03_07_advanced7_userlist.html" />
+    
+    
+    <link rel="prev" href="../chapter4/03_05_advanced5_location.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="4.6" data-basepath=".." data-revision="Thu Nov 05 2015 21:41:53 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="输入并搜索" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        微信公众号开发概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter1/00_00_wechat.html">
+            
+                
+                    <a href="../chapter1/00_00_wechat.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        微信公众号开发介绍
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="chapter1/00_01_wechat_intro.html">
+            
+                
+                    <a href="../chapter1/00_01_wechat_intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        微信公众号介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1/00_02_wechat_server_config.html">
+            
+                
+                    <a href="../chapter1/00_02_wechat_server_config.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        搭建开发服务器环境
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter1/00_03_become_wechat_developer.html">
+            
+                
+                    <a href="../chapter1/00_03_become_wechat_developer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        校验通过开发者模式
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="chapter2/01_00_handle_message.html">
+            
+                
+                    <a href="../chapter2/01_00_handle_message.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        处理微信服务器消息
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="chapter2/01_01_handle_message_1_receive_send_msg.html">
+            
+                
+                    <a href="../chapter2/01_01_handle_message_1_receive_send_msg.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        简单的例子
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter2/01_02_handle_message_2_pojo.html">
+            
+                
+                    <a href="../chapter2/01_02_handle_message_2_pojo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        定义消息类对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chapter2/01_03_handle_message_3_parse_unparse_xml.html">
+            
+                
+                    <a href="../chapter2/01_03_handle_message_3_parse_unparse_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        解析/封装XML消息
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="chapter3/02_00_menu.html">
+            
+                
+                    <a href="../chapter3/02_00_menu.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        自定义菜单开发
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="chapter3/02_01_menu_1_menu_pojo.html">
+            
+                
+                    <a href="../chapter3/02_01_menu_1_menu_pojo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        定义菜单类POJO对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="chapter3/02_02_menu_2_create_menu.html">
+            
+                
+                    <a href="../chapter3/02_02_menu_2_create_menu.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        创建自定义菜单
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="chapter3/02_03_menu_3_keep_token_valid.html">
+            
+                
+                    <a href="../chapter3/02_03_menu_3_keep_token_valid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        获取access_token并保证长期有效
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="chapter4/03_00_advanced.html">
+            
+                
+                    <a href="../chapter4/03_00_advanced.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        九大高级接口使用
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="chapter4/03_01_advanced1_voice_recognition.html">
+            
+                
+                    <a href="../chapter4/03_01_advanced1_voice_recognition.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        语音接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="chapter4/03_02_advanced2_kefu.html">
+            
+                
+                    <a href="../chapter4/03_02_advanced2_kefu.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        客服接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="chapter4/03_03_advanced3_web_OAuth.html">
+            
+                
+                    <a href="../chapter4/03_03_advanced3_web_OAuth.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        网页授权接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="chapter4/03_04_advanced4_qrcode.html">
+            
+                
+                    <a href="../chapter4/03_04_advanced4_qrcode.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        二维码接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="chapter4/03_05_advanced5_location.html">
+            
+                
+                    <a href="../chapter4/03_05_advanced5_location.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        地理位置接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.6" data-path="chapter4/03_06_advanced6_userinfo.html">
+            
+                
+                    <a href="../chapter4/03_06_advanced6_userinfo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        用户基本信息接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="chapter4/03_07_advanced7_userlist.html">
+            
+                
+                    <a href="../chapter4/03_07_advanced7_userlist.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        用户列表接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="chapter4/03_08_advanced8_usergroup.html">
+            
+                
+                    <a href="../chapter4/03_08_advanced8_usergroup.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        用户分组接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="chapter4/03_09_advanced9_updownload.html">
+            
+                
+                    <a href="../chapter4/03_09_advanced9_updownload.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        上传下载接口
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                本书使用 GitBook 发布
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="目录"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="搜索"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="字体设置"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">衬线体</button>
+        <button type="button" data-font="1" class="button">无衬线体</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">白色</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">棕褐色</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">夜间</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="分享"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    分享到 Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    分享到 Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    分享到 Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    分享到 Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    分享到 Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >wechat Notebook</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="%E9%AB%98%E7%BA%A7%E6%8E%A5%E5%8F%A3%E4%BD%BF%E7%94%A8%E2%80%94%E2%80%94%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF">&#x9AD8;&#x7EA7;&#x63A5;&#x53E3;&#x4F7F;&#x7528;&#x2014;&#x2014;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x57FA;&#x672C;&#x4FE1;&#x606F;</h1>
+<p>&#x5F53;&#x7528;&#x6237;&#x5173;&#x6CE8;&#x516C;&#x4F17;&#x8D26;&#x53F7;&#x65F6;&#xFF0C;&#x516C;&#x4F17;&#x8D26;&#x53F7;&#x670D;&#x52A1;&#x5668;&#x53EA;&#x80FD;&#x83B7;&#x53D6;&#x5230;&#x7528;&#x6237;&#x7684;OpenID&#xFF08;OpenID&#x662F;&#x52A0;&#x5BC6;&#x540E;&#x7684;&#x5FAE;&#x4FE1;&#x53F7;&#xFF0C;&#x80FD;&#x591F;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#xFF09;&#xFF0C;&#x5BF9;&#x4E8E;&#x7528;&#x6237;&#x7684;&#x5176;&#x4ED6;&#x4FE1;&#x606F;&#x4E00;&#x65E0;&#x6240;&#x77E5;&#x3002;&#x901A;&#x8FC7;&#x8C03;&#x7528;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#x63A5;&#x53E3;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x80FD;&#x591F;&#x6839;&#x636E;&#x7528;&#x6237;&#x7684;OpnID&#x83B7;&#x53D6;&#x7528;&#x6237;&#x7684;&#x5176;&#x4ED6;&#x4FE1;&#x606F;&#xFF0C;&#x5305;&#x62EC;&#x6635;&#x79F0;&#x3001;&#x5934;&#x50CF;&#x3001;&#x6027;&#x522B;&#x3001;&#x6240;&#x5728;&#x57CE;&#x5E02;&#x3001;&#x8BED;&#x8A00;&#x548C;&#x5173;&#x6CE8;&#x65F6;&#x95F4;&#x3002;</p>
+<p>&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5FAE;&#x4FE1;&#x8FD4;&#x56DE;&#x7684;JSON&#x6570;&#x636E;&#x5305;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-xml">{
+    &quot;subscribe&quot;: 1, 
+    &quot;openid&quot;: &quot;o6_bmjrPTlm6_2sgVt7hMZOPfL2M&quot;, 
+    &quot;nickname&quot;: &quot;Band&quot;, 
+    &quot;sex&quot;: 1, 
+    &quot;language&quot;: &quot;zh_CN&quot;, 
+    &quot;city&quot;: &quot;&#x5E7F;&#x5DDE;&quot;, 
+    &quot;province&quot;: &quot;&#x5E7F;&#x4E1C;&quot;, 
+    &quot;country&quot;: &quot;&#x4E2D;&#x56FD;&quot;, 
+    &quot;headimgurl&quot;:    &quot;http://wx.qlogo.cn/mmopen/g3MonUZtNHkdmzicIlibx6iaFqAc56vxLSUfpb6n5WKSYVY0ChQKkiaJSgQ1dZuTOgvLLrhJbERQQ4eMsv84eavHiaiceqxibJxCfHe/0&quot;, 
+   &quot;subscribe_time&quot;: 1382694957,
+   &quot;unionid&quot;: &quot; o6_bmasdasdsad6_2sgVt7hMZOPfL&quot;
+   &quot;remark&quot;: &quot;&quot;,
+   &quot;groupid&quot;: 0
+}
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x5148;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;POJO&#x6A21;&#x578B;&#x6765;&#x5B58;&#x653E;&#x5B83;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.chanshuyi.pojo;
+
+<span class="hljs-javadoc">/**
+ *<span class="hljs-javadoctag"> @author</span> chenyr
+ *<span class="hljs-javadoctag"> @date</span> 2015.10.10
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WeixinUserInfo</span> </span>{
+    <span class="hljs-comment">//&#x7528;&#x6237;&#x662F;&#x5426;&#x8BA2;&#x9605;&#x8BE5;&#x516C;&#x4F17;&#x53F7;</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> subscribe;
+    <span class="hljs-comment">//&#x7528;&#x6237;&#x7684;&#x6807;&#x8BC6;&#xFF0C;&#x5BF9;&#x5F53;&#x524D;&#x516C;&#x4F17;&#x53F7;&#x552F;&#x4E00;</span>
+    <span class="hljs-keyword">private</span> String openId;
+
+    <span class="hljs-keyword">private</span> String nickname;
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> sex;
+
+    <span class="hljs-keyword">private</span> String language;
+
+    <span class="hljs-keyword">private</span> String city;
+
+    <span class="hljs-keyword">private</span> String province;
+
+    <span class="hljs-keyword">private</span> String country;
+    <span class="hljs-comment">//&#x7528;&#x6237;&#x5934;&#x50CF;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x6570;&#x503C;&#x4EE3;&#x8868;&#x6B63;&#x65B9;&#x5F62;&#x5934;&#x50CF;&#x5927;&#x5C0F;&#xFF08;&#x6709;0&#x3001;46&#x3001;64&#x3001;96&#x3001;132&#x6570;&#x503C;&#x53EF;&#x9009;&#xFF0C;0&#x4EE3;&#x8868;640*640&#x6B63;&#x65B9;&#x5F62;&#x5934;&#x50CF;&#xFF09;&#xFF0C;&#x7528;&#x6237;&#x6CA1;&#x6709;&#x5934;&#x50CF;&#x65F6;&#x8BE5;&#x9879;&#x4E3A;&#x7A7A;&#x3002;&#x82E5;&#x7528;&#x6237;&#x66F4;&#x6362;&#x5934;&#x50CF;&#xFF0C;&#x539F;&#x6709;&#x5934;&#x50CF;URL&#x5C06;&#x5931;&#x6548;&#x3002;</span>
+    <span class="hljs-keyword">private</span> String headimgurl;
+    <span class="hljs-comment">//&#x7528;&#x6237;&#x5173;&#x6CE8;&#x65F6;&#x95F4;&#xFF0C;&#x4E3A;&#x65F6;&#x95F4;&#x6233;</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> subscribeTime;
+    <span class="hljs-comment">//&#x53EA;&#x6709;&#x5728;&#x7528;&#x6237;&#x5C06;&#x516C;&#x4F17;&#x53F7;&#x7ED1;&#x5B9A;&#x5230;&#x5FAE;&#x4FE1;&#x5F00;&#x653E;&#x5E73;&#x53F0;&#x5E10;&#x53F7;&#x540E;&#xFF0C;&#x624D;&#x4F1A;&#x51FA;&#x73B0;&#x8BE5;&#x5B57;&#x6BB5;&#x3002;</span>
+    <span class="hljs-keyword">private</span> String unionid;
+    <span class="hljs-comment">//&#x516C;&#x4F17;&#x53F7;&#x8FD0;&#x8425;&#x8005;&#x5BF9;&#x7C89;&#x4E1D;&#x7684;&#x5907;&#x6CE8;&#xFF0C;&#x516C;&#x4F17;&#x53F7;&#x8FD0;&#x8425;&#x8005;&#x53EF;&#x5728;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x5E73;&#x53F0;&#x7528;&#x6237;&#x7BA1;&#x7406;&#x754C;&#x9762;&#x5BF9;&#x7C89;&#x4E1D;&#x6DFB;&#x52A0;&#x5907;&#x6CE8;</span>
+    <span class="hljs-keyword">private</span> String remark;
+    <span class="hljs-comment">//&#x7528;&#x6237;&#x6240;&#x5728;&#x7684;&#x5206;&#x7EC4;ID</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> groupid;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getSubscribe</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> subscribe;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setSubscribe</span><span class="hljs-params">(<span class="hljs-keyword">int</span> subscribe)</span> </span>{
+        <span class="hljs-keyword">this</span>.subscribe = subscribe;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getOpenId</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> openId;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setOpenId</span><span class="hljs-params">(String openId)</span> </span>{
+        <span class="hljs-keyword">this</span>.openId = openId;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getNickname</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> nickname;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setNickname</span><span class="hljs-params">(String nickname)</span> </span>{
+        <span class="hljs-keyword">this</span>.nickname = nickname;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getSex</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> sex;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setSex</span><span class="hljs-params">(<span class="hljs-keyword">int</span> sex)</span> </span>{
+        <span class="hljs-keyword">this</span>.sex = sex;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getLanguage</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> language;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setLanguage</span><span class="hljs-params">(String language)</span> </span>{
+        <span class="hljs-keyword">this</span>.language = language;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getCity</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> city;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setCity</span><span class="hljs-params">(String city)</span> </span>{
+        <span class="hljs-keyword">this</span>.city = city;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getProvince</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> province;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setProvince</span><span class="hljs-params">(String province)</span> </span>{
+        <span class="hljs-keyword">this</span>.province = province;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getCountry</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> country;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setCountry</span><span class="hljs-params">(String country)</span> </span>{
+        <span class="hljs-keyword">this</span>.country = country;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getHeadimgurl</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> headimgurl;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setHeadimgurl</span><span class="hljs-params">(String headimgurl)</span> </span>{
+        <span class="hljs-keyword">this</span>.headimgurl = headimgurl;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getSubscribeTime</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> subscribeTime;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setSubscribeTime</span><span class="hljs-params">(<span class="hljs-keyword">int</span> subscribeTime)</span> </span>{
+        <span class="hljs-keyword">this</span>.subscribeTime = subscribeTime;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getUnionid</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> unionid;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setUnionid</span><span class="hljs-params">(String unionid)</span> </span>{
+        <span class="hljs-keyword">this</span>.unionid = unionid;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getRemark</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> remark;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setRemark</span><span class="hljs-params">(String remark)</span> </span>{
+        <span class="hljs-keyword">this</span>.remark = remark;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getGroupid</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> groupid;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setGroupid</span><span class="hljs-params">(<span class="hljs-keyword">int</span> groupid)</span> </span>{
+        <span class="hljs-keyword">this</span>.groupid = groupid;
+    }
+
+    <span class="hljs-annotation">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> openId + <span class="hljs-string">&quot;\n&quot;</span> + subscribe + <span class="hljs-string">&quot;\n&quot;</span> + nickname + <span class="hljs-string">&quot;\n&quot;</span> + sex + <span class="hljs-string">&quot;\n&quot;</span> + language + <span class="hljs-string">&quot;\n&quot;</span> + city + <span class="hljs-string">&quot;\n&quot;</span> + province + <span class="hljs-string">&quot;\n&quot;</span> + country + <span class="hljs-string">&quot;\n&quot;</span> 
+                + <span class="hljs-string">&quot;\n&quot;</span> + headimgurl + <span class="hljs-string">&quot;\n&quot;</span> + subscribeTime + <span class="hljs-string">&quot;\n&quot;</span> + unionid + <span class="hljs-string">&quot;\n&quot;</span> + remark + <span class="hljs-string">&quot;\n&quot;</span> + groupid;
+    }
+}
+</code></pre>
+<p>&#x4E4B;&#x540E;&#x6211;&#x4EEC;&#x5728;WeixinUtil&#x7C7B;&#x4E2D;&#x589E;&#x52A0;getUserInfo()&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5C06;&#x5411;&#x5FAE;&#x4FE1;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;https&#x8BF7;&#x6C42;&#xFF0C;&#x8BF7;&#x6C42;&#x7528;&#x6237;&#x7684;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> WeixinUserInfo <span class="hljs-title">getUserInfo</span><span class="hljs-params">(String accessToken, String openId, String lang)</span></span>{
+    WeixinUserInfo weixinUserInfo = <span class="hljs-keyword">null</span>;
+
+    <span class="hljs-comment">//&#x62FC;&#x63A5;&#x8BF7;&#x6C42;&#x5730;&#x5740;</span>
+    String requestUrl = <span class="hljs-string">&quot;https://api.weixin.qq.com/cgi-bin/user/info?access_token=ACCESS_TOKEN&amp;openid=OPENID&amp;lang=LANG&quot;</span>;
+    requestUrl = requestUrl.replace(<span class="hljs-string">&quot;ACCESS_TOKEN&quot;</span>, accessToken);
+    requestUrl = requestUrl.replace(<span class="hljs-string">&quot;OPENID&quot;</span>, openId);
+    requestUrl = requestUrl.replace(<span class="hljs-string">&quot;LANG&quot;</span>, lang);
+
+    <span class="hljs-comment">//&#x53D1;&#x9001;HTTPS&#x8BF7;&#x6C42;</span>
+    JSONObject jsonObject = httpsRequest(requestUrl, <span class="hljs-string">&quot;GET&quot;</span>, <span class="hljs-keyword">null</span>);
+    <span class="hljs-keyword">if</span>(<span class="hljs-keyword">null</span> != jsonObject){
+        <span class="hljs-keyword">try</span>{
+            weixinUserInfo = <span class="hljs-keyword">new</span> WeixinUserInfo();
+            weixinUserInfo.setOpenId(jsonObject.getString(<span class="hljs-string">&quot;openid&quot;</span>));
+            weixinUserInfo.setSubscribe(jsonObject.getInt(<span class="hljs-string">&quot;subscribe&quot;</span>));
+            weixinUserInfo.setSubscribeTime(jsonObject.getInt(<span class="hljs-string">&quot;subscribe_time&quot;</span>));
+            weixinUserInfo.setNickname(jsonObject.getString(<span class="hljs-string">&quot;nickname&quot;</span>));
+            weixinUserInfo.setSex(jsonObject.getInt(<span class="hljs-string">&quot;sex&quot;</span>));
+            weixinUserInfo.setCountry(jsonObject.getString(<span class="hljs-string">&quot;country&quot;</span>));
+            weixinUserInfo.setProvince(jsonObject.getString(<span class="hljs-string">&quot;province&quot;</span>));
+            weixinUserInfo.setCity(jsonObject.getString(<span class="hljs-string">&quot;city&quot;</span>));
+            weixinUserInfo.setLanguage(jsonObject.getString(<span class="hljs-string">&quot;language&quot;</span>));
+            weixinUserInfo.setHeadimgurl(jsonObject.getString(<span class="hljs-string">&quot;headimgurl&quot;</span>));
+        }<span class="hljs-keyword">catch</span>(Exception e){
+            <span class="hljs-keyword">if</span>(<span class="hljs-number">0</span> == weixinUserInfo.getSubscribe()){
+                log.error(<span class="hljs-string">&quot;&#x7528;&#x6237;{}&#x5DF2;&#x53D6;&#x6D88;&#x5173;&#x6CE8;&quot;</span>, weixinUserInfo.getOpenId() );
+            }<span class="hljs-keyword">else</span>{
+                <span class="hljs-keyword">int</span> errorCode = jsonObject.getInt(<span class="hljs-string">&quot;errcode&quot;</span>);
+                String errorMsg = jsonObject.getString(<span class="hljs-string">&quot;errmsg&quot;</span>);
+                log.error(<span class="hljs-string">&quot;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x5931;&#x8D25; errcode:{} errmsg:{}&quot;</span>, errorCode, errorMsg );
+            }
+        }
+    }
+
+    <span class="hljs-keyword">return</span> weixinUserInfo;
+}
+</code></pre>
+<p>&#x4E4B;&#x540E;&#x6211;&#x4EEC;&#x5199;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x7C7B;&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-annotation">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">getUserInfoTest</span><span class="hljs-params">()</span></span>{
+    String accessToken = <span class="hljs-string">&quot;2zBI3XFTkfoiY6rJZ5hwyiZ-VsM4_6DIeuAzgtnwlEYkUOBblHMDu4PhtMimqbJzzpfJRe4L_ltovNlApL9WVI3X-aQcjvNl7FfhuFEQ3Vs&quot;</span>;
+    WeixinUserInfo user = WeixinUtil.getUserInfo(accessToken, <span class="hljs-string">&quot;ovnbes-KpItRnUlNSrDsxVL4ZTCE&quot;</span>, <span class="hljs-string">&quot;zh_CN&quot;</span>);
+    System.out.println(user.toString());
+}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chapter4/03_05_advanced5_location.html" class="navigation navigation-prev " aria-label="Previous page: 地理位置接口"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chapter4/03_07_advanced7_userlist.html" class="navigation navigation-next " aria-label="Next page: 用户列表接口"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
